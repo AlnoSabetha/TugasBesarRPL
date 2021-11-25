@@ -26,7 +26,7 @@
 	<center>
 		<table>
 			<tr>
-				<td><img src="img/logoukdw.png" width="90" height="90"></td>
+				<td><img src="/img/logoukdw.png" width="90" height="90"></td>
 				<td>
 				<center>
 					<font size="4">LEMBAGA PERATIKUM 2019</font><br>
@@ -88,8 +88,8 @@
 </div>
 
 <script>
-window.print();
+    window.print();
 </script>
-</body>
 
+</body>
 </html>

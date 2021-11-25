@@ -31,9 +31,10 @@
                                     <td>{{ $s->nama_mitra }}</td>
                                     <td>{{ $s->alamat_mitra }}</td>
                                     <td>{{ $s->created_at }}</td>
-                                    <td><a href="" class="btn btn-success"><img src="/img/konfirm.png" alt="disetujui" height="20" width="20"></a>
-                                <a href="" class="btn btn-danger"><img src="/img/rejected.png" alt="disetujui" height="20" width="20"></a></td>
-                                </tr>
+                                    <td><a href="/surat/template/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>
+                                        <a href="" class="btn btn-success"><img src="/img/konfirm.png" alt="disetujui" height="20" width="20"></a>
+                                        <a href="" class="btn btn-danger"><img src="/img/rejected.png" alt="disetujui" height="20" width="20"></a></td>
+                                    </tr>
                                 @endforeach
                             </tbody>
                         </table>
