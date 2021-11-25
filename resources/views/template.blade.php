@@ -65,30 +65,25 @@
     <tr>
         <td style="width: 30%;">Nama</td>
         <td style="width: 5%;">:</td>
-        <td style="width: 65%;">Robert</td>
+        <td style="width: 65%;">{{ $name }}</td>
     </tr>
     <tr>
-        <td style="width: 30%;">Tempat, tanggal lahir</td>
+        <td style="width: 30%;">Tujuan</td>
         <td style="width: 5%;">:</td>
-        <td style="width: 65%;">Grobogan, 3 Maret 1993</td>
+        <td style="width: 65%;">{{ $tujuan }}</td>
     </tr>
     <tr>
-        <td style="width: 30%; vertical-align: top;">Jenis Kelamin</td>
+        <td style="width: 30%; vertical-align: top;">Alamat</td>
         <td style="width: 5%; vertical-align: top;">:</td>
-        <td style="width: 65%;">Pria</td>
-    </tr>
-    <tr>
-        <td style="width: 30%;">Pendidikan Terakhir</td>
-        <td style="width: 5%;">:</td>
-        <td style="width: 65%;">SMA</td>
+        <td style="width: 65%;">{{ $alamat }}</td>
     </tr>
 </table>
 
-<p>Dengan ini saya bermaksud mengajukan permohonan untuk mengundurkan diri.</p>
+<p>{{ $keterangan }}</p>
 
 <div style="width: 50%; text-align: left; float: right;">Bandung, 12 November 2021</div><br>
 <div style="width: 50%; text-align: left; float: right;">Yang bertanda tangan,</div><br><br><br><br><br>
-<div style="width: 50%; text-align: left; float: right;">Robert</div>
+<div style="width: 50%; text-align: left; float: right;">{{ $name }}</div>
 
 </div>
 

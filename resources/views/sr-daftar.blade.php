@@ -30,7 +30,7 @@
                                     <td>{{ $s->nama_mitra }}</td>
                                     <td>{{ $s->alamat_mitra }}</td>
                                     <td>{{ $s->created_at }}</td>
-                                    <td><a href="/template" class="btn btn-info"><img src="/img/view.png" alt="View Surat" width="30" height="20" ></a>
+                                    <td><a href="/surat/template/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="View Surat" width="30" height="20" ></a>
                                     <a href="/surat/edit/{{$s->id}}" class="btn btn-warning">Edit</a>
                                     <a href="/surat/hapus/{{$s->id}}" class="btn btn-danger">Delete</a></td>
                                 </tr>

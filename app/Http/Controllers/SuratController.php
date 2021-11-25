@@ -53,6 +53,15 @@ class SuratController extends Controller
         return redirect('/surat');
     }
 
+    public function template($id)
+    {
+        $srt = surat::find($id);
+        return view('template', ['name' => $srt->nama_mitra,
+        'tujuan' => $srt->tujuan_surat,
+        'alamat' => $srt->alamat_mitra,
+        'keterangan' => $srt->keterangan]);
+    }
+
     //Controller Admin
     public function indexAdmin()
     {
