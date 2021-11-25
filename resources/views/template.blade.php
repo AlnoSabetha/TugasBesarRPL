@@ -28,12 +28,12 @@
 			<tr>
 				<td><img src="/img/logoukdw.png" width="90" height="90"></td>
 				<td>
-				<center>
-					<font size="4">LEMBAGA PERATIKUM 2019</font><br>
+					<left>
 					<font size="5"><b>UNIVERSITAS KRISTEN DUTA WACANA</b></font><br>
-					<font size="2">Bidang Keahlian : Teknologi informasi</font><br>
-					<font size="2"><i>Jl. Dr. Wahidin Sudirohusodo No.5-25, Kotabaru, Daerah Istimewa Yogyakarta 55224</i></font>
-				</center>
+					<font size="5"><b>FAKULTAS TEKNOLOGI INFORMASI</b></font><br>
+					<font size="2">PROGRAM STUDI INFORMATIKA</font><br>
+					<font size="2">PROGRAM STUDI SISTEM INFORMASI</font><br>
+	</left>
 				</td>
 			</tr>
 			<tr>
@@ -41,25 +41,25 @@
 			</tr>
 		<table width="625">
 			<tr>
-				<td class="text2">Yogyakarta, 16 mei 2021</td>
+				
 			</tr>
 		</table>
+
+		<td>
+		<center>
+					<font size="2"><b><u>SURAT TUGAS</u></b></font><br>
+					<font size="2">Nomor: </font><br>
+	</center>
+				</td>
 		</table>
 		<table>
-			<tr class="text2">
-				<td>Nomer</td>
-				<td width="572">: -</td>
-			</tr>
-			<tr>
-				<td>Perihal</td>
-				<td width="564">: -</td>
-			</tr>
+			
 		</table>
 		<br>
 		<table width="625">
 			<tr>
 		       <td>
-               <p>Dengan Hormat, <br> Yang bertanda tangan dibawah ini saya :</p>
+               <p>Dengan ini Dekan Fakultas Teknologi Informasi Universitas Kristen Duta Wacana Yogyakarta  <br> memberikan tugas kepada para mahasiswa ini :</p>
 
 <table>
     <tr>
