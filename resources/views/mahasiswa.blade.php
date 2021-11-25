@@ -4,45 +4,13 @@
 @section('konten-mhs')
 @section('content')
 
-<div id="layoutSidenav">
-            <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
-                        <div class="nav">
-                            <a class="nav-link" href="index.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Dashboard
-                            </a>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Buat Surat
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="/surat/tambah">Surat Permohonan</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Surat Tugas</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Surat Berita Acara</a>
-                                </nav>
-                            </div>
-                        <div>
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Surat Masuk
-                            </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Surat Keluar
-                            </a>
-                        </div>
-                    </div>
-                    <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as: {{ Auth::user()->name }} </div>
-                        Sistem Surat RPL
-                    </div>
-                </nav>
-            </div>
-            <div id="layoutSidenav_content">
+<div class="">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card" style="width: 95rem;">
+
+<div class="layoutSidenav">
+<div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Dashboard</h1>
@@ -52,7 +20,7 @@
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">Surat Tugas</div>
+                                    <div class="card-body">Surat Masuk</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -61,7 +29,7 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Surat Keterangan</div>
+                                    <div class="card-body">Surat Keluar</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -70,7 +38,7 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Success Card</div>
+                                    <div class="card-body">Arsip</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -95,28 +63,29 @@
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-
-                                    </tbody>
+                                <tr>
+                                    <th>No Surat</th>
+                                    <th>Tujuan Surat</th>
+                                    <th>Nama Mitra</th>
+                                    <th>Alamat Mitra</th>
+                                    <th>Tanggal</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($srt as $s)
+                                <tr>
+                                    <td>{{ $s->id }}</td>
+                                    <td>{{ $s->tujuan_surat }}</td>
+                                    <td>{{ $s->nama_mitra }}</td>
+                                    <td>{{ $s->alamat_mitra }}</td>
+                                    <td>{{ $s->created_at }}</td>
+                                    <td><a href="/surat/template/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>
+                                    <a href="/surat/edit/{{$s->id}}" class="btn btn-warning"><img src="/img/editicon.png" alt="Edit" width="20" height="20"></a>
+                                    <a href="/surat/hapus/{{$s->id}}" class="btn btn-danger"><img src="/img/deleteicon.png" alt="Delete" width="20" height="20"></a></td>
+                                </tr>
+                                @endforeach
+                            </tbody>
                                 </table>
                             </div>
                         </div>
@@ -125,17 +94,17 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
+                            <div class="text-muted">Made with ❤️ by Us</div>
                         </div>
                     </div>
                 </footer>
             </div>
+</div>
+
+                </div>
+            </div>
         </div>
+    </div>
 
 @endsection
 @endsection

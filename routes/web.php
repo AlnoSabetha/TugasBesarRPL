@@ -26,10 +26,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Route Login
 Route::get('admin', function () { return view('admin'); })->middleware('checkRole:admin');
 Route::get('dosen', function () { return view('dosen'); })->middleware(['checkRole:dosen,admin']);
-Route::get('mahasiswa', function () { return view('mahasiswa'); })->middleware(['checkRole:mahasiswa,admin']);
+Route::get('mahasiswa', 'SuratController@dashboardsrt')->middleware(['checkRole:mahasiswa,admin']);
 
 //Routing surat mahasiswa
-Route::get('/surat', 'SuratController@index');
+Route::get('/surat', 'SuratController@daftarsrt');
 Route::get('/surat/tambah', 'SuratController@tambah');
 Route::post('/surat/simpan', 'SuratController@simpan');
 Route::get('/surat/hapus/{id}', 'SuratController@hapus');

@@ -7,7 +7,7 @@
     <div class="">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
+                <div class="card" style="width: 95rem;">
 
                     <div class="card-body">
                         <h1 align="center">Surat Masuk</h1>
@@ -20,6 +20,7 @@
                                     <th>Nama Mitra</th>
                                     <th>Alamat Mitra</th>
                                     <th>Tanggal</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>

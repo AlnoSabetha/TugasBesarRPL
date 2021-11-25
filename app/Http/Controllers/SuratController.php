@@ -8,10 +8,16 @@ use App\surat;
 class SuratController extends Controller
 {
     //Controller Mahasiswa
-    public function index()
+    public function daftarsrt()
     {
         $srt = surat::all();
         return view ('sr-daftar', ['srt' => $srt]);
+    }
+
+    public function dashboardsrt()
+    {
+        $srt = surat::all();
+        return view ('mahasiswa', ['srt' => $srt]);
     }
 
     public function tambah()

@@ -5,13 +5,13 @@
     <div class="">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
+                <div class="card" style="width: 95rem;">
 
                     <div class="card-body">
                         <form action="/surat/simpan" method="POST">
                             @csrf
                             <div class="row d-flex justify-content-center mt-5">
-                            <div class="col-md-3">
+                            <div class="col-md-5">
                                     <main class="form-signin">
                                         <form>
                                             <h1 class="h1 mb-3 fw-normal d-flex justify-content-center">Buat Surat</h1>
