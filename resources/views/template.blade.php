@@ -39,7 +39,7 @@
 			</tr>
 		<table width="625">
 			<tr>
-				
+
 			</tr>
 		</table>
 
@@ -51,7 +51,7 @@
 				</td>
 		</table>
 		<table>
-			
+
 		</table>
 		<br>
 		<table width="625">
@@ -68,11 +68,11 @@
 	<tr>
         <td style="width: 30%;">Nim</td>
         <td style="width: 5%;">:</td>
-        <td style="width: 65%;"></td>
+        <td style="width: 65%;">{{ $nim }}</td>
     </tr>
 </table>
 
-<p>{{ $tujuan }} {{ $keterangan }} $nama_mitra {{ $alamat }} Demikian Surat ini dibuat untuk dapat dipergunakan  sebagaimana perlunya.
+<p>{{ $tujuan }} {{ $keterangan }} {{ $name }} {{ $alamat }} Demikian Surat ini dibuat untuk dapat dipergunakan  sebagaimana perlunya.
 	Kepada penerima tugas setelah menyelesaikan tugas dimohon menyampaikan laporan kepada pemberi tugas
 </p>
 

@@ -74,7 +74,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i></div>
                                 Surat Masuk
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="/suratkeluar">
                                 <div class="sb-nav-link-icon"><i class="fas fa-envelope-open"></i></div>
                                 Surat Keluar
                             </a>

@@ -14,6 +14,12 @@ class SuratController extends Controller
         return view ('sr-daftar', ['srt' => $srt]);
     }
 
+    public function srtkeluar()
+    {
+        $srt = surat::all();
+        return view ('sk-mhs', ['srt' => $srt]);
+    }
+
     public function dashboardsrt()
     {
         $srt = surat::all();
@@ -65,7 +71,8 @@ class SuratController extends Controller
         return view('template', ['name' => $srt->nama_mitra,
         'tujuan' => $srt->tujuan_surat,
         'alamat' => $srt->alamat_mitra,
-        'keterangan' => $srt->keterangan]);
+        'keterangan' => $srt->keterangan,
+        'nim' => $srt->nim]);
     }
 
     //Controller Admin
