@@ -81,4 +81,11 @@ class SuratController extends Controller
         $srt = surat::all();
         return view ('sra-daftar-admin', ['srt' => $srt]);
     }
+
+    //Barcode
+    public function index()
+    {
+      return view('template');
+    }
 }
+
