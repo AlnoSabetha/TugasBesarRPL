@@ -9,16 +9,19 @@
             <div class="col-md-8">
                 <div class="card" style="width: 95rem;">
 
-                    <div class="card-body">
-                        <h1 align="center">Surat Masuk</h1>
-                        <div class="">
-                        <table class="table table-hover">
-                            <thead>
+                    <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Surat Masuk
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
                                 <tr>
+                                    <th>No</th>
                                     <th>No Surat</th>
-                                    <th>Tujuan Surat</th>
-                                    <th>Nama Mitra</th>
-                                    <th>Alamat Mitra</th>
+                                    <th>Jenis Surat</th>
+                                    <th>Status</th>
                                     <th>Tanggal</th>
                                     <th>Action</th>
                                 </tr>
@@ -27,9 +30,9 @@
                                 @foreach($srt as $s)
                                 <tr>
                                     <td>{{ $s->id }}</td>
-                                    <td>{{ $s->tujuan_surat }}</td>
-                                    <td>{{ $s->nama_mitra }}</td>
-                                    <td>{{ $s->alamat_mitra }}</td>
+                                    <td>{{ $s->no_surat }}</td>
+                                    <td>{{ $s->jenis_surat }}</td>
+                                    <td>{{ $s->status }}</td>
                                     <td>{{ $s->created_at }}</td>
                                     <td><a href="/surat/template/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>
                                     <a href="/surat/edit/{{$s->id}}" class="btn btn-warning"><img src="/img/editicon.png" alt="Edit" width="20" height="20"></a>
@@ -37,9 +40,9 @@
                                 </tr>
                                 @endforeach
                             </tbody>
-                        </table>
+                                </table>
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>

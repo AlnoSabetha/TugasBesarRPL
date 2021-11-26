@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Surat extends Model
 {
-    protected $table = 'input_surat';
-    protected $fillable = ['tujuan_surat', 'nama_mitra','alamat_mitra','keterangan'];
+    protected $table = 'surat_tugas';
+    protected $fillable = ['tujuan_surat', 'nama_mitra','alamat_mitra','keterangan', 'nim', 'nama', 'status', 'no_surat'];
 }

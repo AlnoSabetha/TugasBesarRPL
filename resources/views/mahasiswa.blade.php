@@ -15,7 +15,7 @@
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Dashboard</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Dashboard</li>
+                            <li class="breadcrumb-item active">Atur surat anda dengan lebih mudah</li>
                         </ol>
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
@@ -58,13 +58,13 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                DataTable Example
+                                Arsip Surat
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
                                 <tr>
-                                    <th>No Surat</th>
+                                    <th>No</th>
                                     <th>Tujuan Surat</th>
                                     <th>Nama Mitra</th>
                                     <th>Alamat Mitra</th>
