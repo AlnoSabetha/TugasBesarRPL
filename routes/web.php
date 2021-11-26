@@ -44,6 +44,13 @@ Route::get('/admin', 'AdminController@dashboard');
 
 Route::get('/generate-barcode', [ProductController::class, 'index'])->name('generate.barcode');
 
+Route::get('/qr', function()
+{
+	return QrCode::size(250)
+	->backgroundColor(255, 255, 204)
+	->generate('BELAJAR QR');
+});
+
 
 
 

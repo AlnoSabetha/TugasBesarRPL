@@ -226,6 +226,13 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'providers' => [
+            SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
+        ],
+        'aliases' => [
+
+            'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
+        ],
 
         'providers' => [
          
@@ -236,6 +243,7 @@ return [
             'DNS1D' => Milon\Barcode\Facades\DNS1DFacade::class,
             'DNS2D' => Milon\Barcode\Facades\DNS2DFacade::class,
         ]
+        
 
     ],
 
