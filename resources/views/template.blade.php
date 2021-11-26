@@ -26,14 +26,12 @@
 	<center>
 		<table>
 			<tr>
-				<td><img src="/img/logoukdw.png" width="90" height="90"></td>
+				<td><img src="/img/logoukdw.png" width="70" height="90"></td>
 				<td>
-					<left>
-					<font size="5"><b>UNIVERSITAS KRISTEN DUTA WACANA</b></font><br>
+					<font size="4"><b>UNIVERSITAS KRISTEN DUTA WACANA</b></font><br>
 					<font size="5"><b>FAKULTAS TEKNOLOGI INFORMASI</b></font><br>
 					<font size="2">PROGRAM STUDI INFORMATIKA</font><br>
 					<font size="2">PROGRAM STUDI SISTEM INFORMASI</font><br>
-	</left>
 				</td>
 			</tr>
 			<tr>
@@ -67,21 +65,18 @@
         <td style="width: 5%;">:</td>
         <td style="width: 65%;">{{ $name }}</td>
     </tr>
-    <tr>
-        <td style="width: 30%;">Tujuan</td>
+	<tr>
+        <td style="width: 30%;">Nim</td>
         <td style="width: 5%;">:</td>
-        <td style="width: 65%;">{{ $tujuan }}</td>
-    </tr>
-    <tr>
-        <td style="width: 30%; vertical-align: top;">Alamat</td>
-        <td style="width: 5%; vertical-align: top;">:</td>
-        <td style="width: 65%;">{{ $alamat }}</td>
+        <td style="width: 65%;"></td>
     </tr>
 </table>
 
-<p>{{ $keterangan }}</p>
+<p>{{ $tujuan }} {{ $keterangan }} $nama_mitra {{ $alamat }} Demikian Surat ini dibuat untuk dapat dipergunakan  sebagaimana perlunya.
+	Kepada penerima tugas setelah menyelesaikan tugas dimohon menyampaikan laporan kepada pemberi tugas
+</p>
 
-<div style="width: 50%; text-align: left; float: right;">Bandung, 12 November 2021</div><br>
+<div style="width: 50%; text-align: left; float: right;">Waktu dan tempat menandatangani</div><br>
 <div style="width: 50%; text-align: left; float: right;">Yang bertanda tangan,</div><br><br><br><br><br>
 <div style="width: 50%; text-align: left; float: right;">{{ $name }}</div>
 
