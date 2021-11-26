@@ -78,6 +78,26 @@
 
 <div style="width: 50%; text-align: left; float: right;">Waktu dan tempat menandatangani</div><br>
 <div style="width: 50%; text-align: left; float: right;">Yang bertanda tangan,</div><br><br><br><br><br>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Laravel Generate Barcode Examples</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <div class="mb-3">{!! DNS2D::getBarcodeHTML('4445645656', 'QRCODE') !!}</div>
+
+
+    </div>
+</body>
+</html>
+
 <div style="width: 50%; text-align: left; float: right;">{{ $name }}</div>
 
 </div>
