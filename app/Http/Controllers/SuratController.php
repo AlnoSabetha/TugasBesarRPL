@@ -37,7 +37,7 @@ class SuratController extends Controller
             'tujuan_surat' => $request->tujuan_surat,
             'nama_mitra' => $request->nama_mitra,
             'alamat_mitra' => $request->alamat_mitra,
-            'keterangan' => $request->keterangan
+            'keterangan' => $request->keterangan,
         ]);
         return redirect('/surat');
     }
