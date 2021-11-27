@@ -75,6 +75,12 @@ class SuratController extends Controller
         'nim' => $srt->nim]);
     }
 
+        //Barcode
+    public function index()
+    {
+      return view('template');
+    }
+
     //Controller Admin
     public function indexAdmin()
     {
@@ -82,10 +88,10 @@ class SuratController extends Controller
         return view ('sra-daftar-admin', ['srt' => $srt]);
     }
 
-    //Barcode
-    public function index()
+    public function view($id)
     {
-      return view('template');
+        $srt = surat::find($id);
+        return view('sra-view' , ['srt' => $srt]);
     }
 }
 

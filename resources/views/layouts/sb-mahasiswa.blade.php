@@ -72,11 +72,7 @@
                             </div>
                             <a class="nav-link" href="/surat">
                                 <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i></div>
-                                Surat Masuk
-                            </a>
-                            <a class="nav-link" href="/suratkeluar">
-                                <div class="sb-nav-link-icon"><i class="fas fa-envelope-open"></i></div>
-                                Surat Keluar
+                                Permohonan Surat
                             </a>
                         </div>
                     </div>

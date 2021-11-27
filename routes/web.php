@@ -41,6 +41,7 @@ Route::get('/surat/template/{id}', 'SuratController@template');
 //Routing surat admin
 Route::get('/surat/admin', 'AdminController@index');
 Route::get('/admin', 'AdminController@dashboard');
+Route::get('/surat/view/{id}', 'SuratController@view');
 
 Route::get('/generate-barcode', [ProductController::class, 'index'])->name('generate.barcode');
 

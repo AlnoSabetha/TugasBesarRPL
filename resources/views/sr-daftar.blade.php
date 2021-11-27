@@ -20,8 +20,8 @@
                                 <tr>
                                     <th>No</th>
                                     <th>No Surat</th>
+                                    <th>Jenis Surat</th>
                                     <th>Status</th>
-                                    <th>Keterangan</th>
                                     <th>Tanggal</th>
                                     <th>Action</th>
                                 </tr>
@@ -31,10 +31,12 @@
                                 <tr>
                                     <td>{{ $s->id }}</td>
                                     <td>{{ $s->no_surat }}</td>
+                                    <td>{{ $s->jenis_surat }}</td>
                                     <td>{{ $s->status }}</td>
-                                    <td>{{ $s->keterangan }}</td>
                                     <td>{{ $s->created_at }}</td>
-                                    <td><a href="/surat/template/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a></td>
+                                    <td><a href="/surat/template/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>
+                                        <a href="/surat/edit/{{$s->id}}" class="btn btn-warning"><img src="/img/editicon.png" alt="Edit" width="20" height="20"></a>
+                                        <a href="/surat/hapus/{{$s->id}}" class="btn btn-danger"><img src="/img/deleteicon.png" alt="Delete" width="20" height="20"></a></td>
                                 </tr>
                                 @endforeach
                             </tbody>
