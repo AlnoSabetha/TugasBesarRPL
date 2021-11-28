@@ -81,7 +81,7 @@
 
 
         <main class="py-4">
-            @yield('content')
+            @yield('content-mhs')
         </main>
     </div>
 </body>

@@ -4,25 +4,29 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\surat;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class SuratController extends Controller
 {
     //Controller Mahasiswa
     public function daftarsrt()
     {
-        $srt = surat::all();
+        $nim = Auth::user()->nim;
+        $srt = surat::where('nim', '=', $nim)->get();
         return view ('sr-daftar', ['srt' => $srt]);
     }
 
-    public function srtkeluar()
+    /* public function srtkeluar()
     {
         $srt = surat::all();
         return view ('sk-mhs', ['srt' => $srt]);
-    }
+    } */
 
     public function dashboardsrt()
     {
-        $srt = surat::all();
+        $nim = Auth::user()->nim;
+        $srt = surat::where('nim', '=', $nim)->get();
         return view ('mahasiswa', ['srt' => $srt]);
     }
 
@@ -33,11 +37,15 @@ class SuratController extends Controller
 
     public function simpan(Request $request)
     {
+        $nim = Auth::user()->nim;
+        $nama = Auth::user()->name;
         surat::create([
             'tujuan_surat' => $request->tujuan_surat,
             'nama_mitra' => $request->nama_mitra,
             'alamat_mitra' => $request->alamat_mitra,
             'keterangan' => $request->keterangan,
+            'nim' => $nim,
+            'nama' => $nama
         ]);
         return redirect('/surat');
     }
@@ -79,19 +87,6 @@ class SuratController extends Controller
     public function index()
     {
       return view('template');
-    }
-
-    //Controller Admin
-    public function indexAdmin()
-    {
-        $srt = surat::all();
-        return view ('sra-daftar-admin', ['srt' => $srt]);
-    }
-
-    public function view($id)
-    {
-        $srt = surat::find($id);
-        return view('sra-view' , ['srt' => $srt]);
     }
 }
 

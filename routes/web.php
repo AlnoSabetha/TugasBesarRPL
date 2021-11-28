@@ -39,10 +39,13 @@ Route::put('/surat/updated/{id}', 'SuratController@updated');
 Route::get('/surat/template/{id}', 'SuratController@template');
 
 //Routing surat admin
-Route::get('/surat/admin', 'AdminController@index');
+Route::get('/surat/admin', 'AdminController@indexAdmin');
 Route::get('/admin', 'AdminController@dashboard');
-Route::get('/surat/view/{id}', 'SuratController@view');
+Route::get('/surat/view/{id}', 'AdminController@view');
+Route::get('/surat/admin/setuju/{id}', 'AdminController@confirm');
+Route::get('/surat/admin/tolak/{id}', 'AdminController@reject');
 
+//template
 Route::get('/generate-barcode', [ProductController::class, 'index'])->name('generate.barcode');
 
 Route::get('/qr', function()

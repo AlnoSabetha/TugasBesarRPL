@@ -2,7 +2,7 @@
 @extends('layouts.app-mahasiswa')
 
 @section('konten-mhs')
-@section('content')
+@section('content-mhs')
 
     <div class="">
         <div class="row justify-content-center">
