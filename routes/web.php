@@ -27,6 +27,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('admin', function () { return view('admin'); })->middleware('checkRole:admin');
 Route::get('dosen', function () { return view('dosen'); })->middleware(['checkRole:dosen,admin']);
 Route::get('mahasiswa', 'SuratController@dashboardsrt')->middleware(['checkRole:mahasiswa,admin']);
+//Route::get('mahasiswa/home', [HomeController::class, 'mahasiswaHome'])->name('mahasiswa.home')->middleware('Role');
 
 //Routing surat mahasiswa
 Route::get('/surat', 'SuratController@daftarsrt');

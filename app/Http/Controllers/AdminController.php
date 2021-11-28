@@ -28,7 +28,7 @@ class AdminController extends Controller
     public function confirm($id)
     {
         $srt = Surat::find($id);
-        $srt->no_surat = 'ST001';
+        $srt->no_surat = 'ST-1';
         $srt->status = 'Disetujui';
         $srt->save();
         return redirect('/surat/admin');

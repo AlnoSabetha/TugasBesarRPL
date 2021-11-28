@@ -2,19 +2,20 @@
 
 @section('content')
 <div class="container">
-    <a class="navbar-brand" href="{{ url('/') }}">
-        {{ config('app.name', 'Laravel') }}
-    </a>
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        @if(Auth()->user()->role == 'admin')
         <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{{url('admin')}}">Halaman Admin</a>
+            <h1 align="center"><a class="nav-link" href="{{url('admin')}}">Mari Mulai</a></h1>
         </li>
+        @elseif(Auth()->user()->role == 'dosen')
         <li class="nav-item">
-            <a class="nav-link" href="{{url('dosen')}}">Halaman Dosen</a>
+            <h1 align="center"><a class="nav-link" href="{{url('dosen')}}">Mari Mulai</a></h1>
         </li>
+        @elseif(Auth()->user()->role == 'mahasiswa')
         <li class="nav-item">
-            <a class="nav-link" href="{{url('mahasiswa')}}">Halaman Mahasiswa</a>
+            <h1 align="center"><a class="nav-link" href="{{url('mahasiswa')}}">Mari Mulai</a></h1>
         </li>
+        @endif
     </ul>
 </div>
 @endsection

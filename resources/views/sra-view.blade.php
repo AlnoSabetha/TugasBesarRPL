@@ -37,11 +37,6 @@
                                     </div>
 
                                     <div class="form-floating mb-2">
-                                    <input type="date" class="form-control btn-black" name="tanggal" id="floatingInput" value="{{ $srt->created_at }}">
-                                    <label for="floatingInput">Tanggal</label>
-                                    </div>
-
-                                    <div class="form-floating mb-2">
                                     <input type="text" class="form-control btn-black" name="alamat_mitra" id="floatingInput" value="{{ $srt->alamat_mitra }}">
                                     <label for="floatingInput">Alamat Mitra</label>
                                     </div>
