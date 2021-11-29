@@ -83,7 +83,7 @@
                                                         <td>@if($s->status == 'Disetujui')
                                                             <a href="/surat/template/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>@elseif($s->status == 'Ditolak')
                                                             <a href="/surat/edit/{{$s->id}}" class="btn btn-warning"><img src="/img/editicon.png" alt="Edit" width="20" height="20"></a>
-                                                            <a href="/surat/hapus/{{$s->id}}" class="btn btn-danger"><img src="/img/deleteicon.png" alt="Delete" width="20" height="20"></a></td>@endif
+                                                            <a href="/surat/hapus/{{$s->id}}" class="btn btn-danger"><img src="/img/deleteicon.png" alt="Delete" width="20" height="20"></a>@endif</td>
                                                     </tr>
                                                     @endforeach
                                                 </tbody>
