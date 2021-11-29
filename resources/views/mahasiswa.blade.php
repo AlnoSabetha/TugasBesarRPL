@@ -20,7 +20,7 @@
                                             <div class="row">
                                                 <div class="col-xl-3 col-md-6">
                                                     <div class="card bg-primary text-white mb-4">
-                                                        <div class="card-body">Surat Masuk</div>
+                                                        <div class="card-body">Surat Tugas</div>
                                                         <div class="card-footer d-flex align-items-center justify-content-between">
                                                             <a class="small text-white stretched-link" href="#">View Details</a>
                                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -29,7 +29,7 @@
                                                 </div>
                                                 <div class="col-xl-3 col-md-6">
                                                     <div class="card bg-warning text-white mb-4">
-                                                        <div class="card-body">Surat Keluar</div>
+                                                        <div class="card-body">Surat Berita Acara</div>
                                                         <div class="card-footer d-flex align-items-center justify-content-between">
                                                             <a class="small text-white stretched-link" href="#">View Details</a>
                                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -47,7 +47,7 @@
                                                 </div>
                                                 <div class="col-xl-3 col-md-6">
                                                     <div class="card bg-danger text-white mb-4">
-                                                        <div class="card-body">Danger Card</div>
+                                                        <div class="card-body">Surat naon</div>
                                                         <div class="card-footer d-flex align-items-center justify-content-between">
                                                             <a class="small text-white stretched-link" href="#">View Details</a>
                                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -80,9 +80,10 @@
                                                         <td>{{ $s->jenis_surat }}</td>
                                                         <td>{{ $s->status }}</td>
                                                         <td>{{ $s->created_at }}</td>
-                                                        <td><a href="/surat/template/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>
+                                                        <td>@if($s->status == 'Disetujui')
+                                                            <a href="/surat/template/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>@elseif($s->status == 'Ditolak')
                                                             <a href="/surat/edit/{{$s->id}}" class="btn btn-warning"><img src="/img/editicon.png" alt="Edit" width="20" height="20"></a>
-                                                            <a href="/surat/hapus/{{$s->id}}" class="btn btn-danger"><img src="/img/deleteicon.png" alt="Delete" width="20" height="20"></a></td>
+                                                            <a href="/surat/hapus/{{$s->id}}" class="btn btn-danger"><img src="/img/deleteicon.png" alt="Delete" width="20" height="20"></a></td>@endif
                                                     </tr>
                                                     @endforeach
                                                 </tbody>
