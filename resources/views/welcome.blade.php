@@ -62,6 +62,11 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .aturjarak {
+                width: 1300px;
+                height: 950px;
+            }
         </style>
     </head>
     <body>
@@ -80,9 +85,10 @@
                 </div>
             @endif
 
+            <img class="aturjarak" src="/img/parasite.jpg" alt="Put Ur Mask On">
             <div class="content" id="main">
                 <div class="title m-b-md">
-                    Sistem surat-menyurat RPL
+                    Sistem surat menyurat RPL
                 </div>
             </div>
         </div>
