@@ -76,6 +76,8 @@
 	Kepada penerima tugas setelah menyelesaikan tugas dimohon menyampaikan laporan kepada pemberi tugas
 </p>
 
+
+
 <div style="width: 50%; text-align: left; float: right;">$Waktu dan tempat menandatangani</div><br>
 <div style="width: 50%; text-align: left; float: right;">Yang bertanda tangan,</div><br><br>
 <div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br>
