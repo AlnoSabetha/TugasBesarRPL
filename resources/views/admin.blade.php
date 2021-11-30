@@ -61,7 +61,7 @@
                                 Surat Masuk
                             </div>
                             <div class="card-body">
-                                <table class="table table-hover">
+                                <table id="datatablesSimple">
                             <thead>
                                 <tr>
                                     <th>No</th>
@@ -73,9 +73,10 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @php $no=1; @endphp
                                 @foreach($srt as $s)
                                 <tr>
-                                    <td>{{ $s->id }}</td>
+                                    <td>{{ $no++ }}</td>
                                     <td>{{ $s->nim }}</td>
                                     <td>{{ $s->nama }}</td>
                                     <td>{{ $s->jenis_surat }}</td>

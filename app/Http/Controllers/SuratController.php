@@ -75,12 +75,15 @@ class SuratController extends Controller
 
     public function template($id)
     {
+        $nama = Auth::user()->name;
         $srt = surat::find($id);
         return view('template', ['name' => $srt->nama_mitra,
         'tujuan' => $srt->tujuan_surat,
         'alamat' => $srt->alamat_mitra,
         'keterangan' => $srt->keterangan,
-        'nim' => $srt->nim]);
+        'nim' => $srt->nim,
+        'nama' => $nama,
+        'nosur' => $srt->no_surat]);
     }
 
         //Barcode

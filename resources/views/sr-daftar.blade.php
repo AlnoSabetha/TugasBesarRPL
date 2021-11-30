@@ -27,9 +27,10 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @php $no=1; @endphp
                                 @foreach($srt as $s)
                                 <tr>
-                                    <td>{{ $s->id }}</td>
+                                    <td>{{ $no++ }}</td>
                                     <td>{{ $s->no_surat }}</td>
                                     <td>{{ $s->jenis_surat }}</td>
                                     <td>{{ $s->status }}</td>
