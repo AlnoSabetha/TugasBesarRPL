@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\surat;
-use App\User;
 use Illuminate\Support\Facades\Auth;
 
 class SuratController extends Controller
@@ -33,6 +32,16 @@ class SuratController extends Controller
     public function tambah()
     {
         return view ('sr-tambah');
+    }
+
+    public function tambahkeputusan()
+    {
+        return view ('sr-keputusan');
+    }
+
+    public function tambahberitacara()
+    {
+        return view ('sr-beritaacara');
     }
 
     public function simpan(Request $request)

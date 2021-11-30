@@ -33,6 +33,8 @@ Route::get('mahasiswa', 'SuratController@dashboardsrt')->middleware(['checkRole:
 Route::get('/surat', 'SuratController@daftarsrt');
 Route::get('/suratkeluar', 'SuratController@srtkeluar');
 Route::get('/surat/tambah', 'SuratController@tambah');
+Route::get('/surat/tambahkeputusan', 'SuratController@tambahkeputusan');
+Route::get('/surat/tambahberitacara', 'SuratController@tambahberitacara');
 Route::post('/surat/simpan', 'SuratController@simpan');
 Route::get('/surat/hapus/{id}', 'SuratController@hapus');
 Route::get('/surat/edit/{id}', 'SuratController@edit');
