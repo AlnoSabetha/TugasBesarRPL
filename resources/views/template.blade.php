@@ -46,7 +46,7 @@
 		<td>
 		<center>
 					<font size="2"><b><u>SURAT TUGAS</u></b></font><br>
-					<font size="2">Nomor: </font><br>
+					<font size="2">Nomor: {{ $nosur }}</font><br>
 	</center>
 				</td>
 		</table>
@@ -63,7 +63,7 @@
     <tr>
         <td style="width: 30%;">Nama</td>
         <td style="width: 5%;">:</td>
-        <td style="width: 65%;">{{ $name }}</td>
+        <td style="width: 65%;">{{ $nama }}</td>
     </tr>
 	<tr>
         <td style="width: 30%;">Nim</td>
@@ -80,7 +80,7 @@
 
 <div style="width: 50%; text-align: left; float: right;">$Waktu dan tempat menandatangani</div><br>
 <div style="width: 50%; text-align: left; float: right;">Yang bertanda tangan,</div><br><br>
-<div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br>
+<div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
 <div style="width: 50%; text-align: left; float: right;">{{ $name }}</div>
 
 </div>

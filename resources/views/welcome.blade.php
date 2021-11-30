@@ -12,7 +12,6 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-image: url('/img/parasite.jpeg');
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
@@ -67,12 +66,33 @@
                 width: 1300px;
                 height: 950px;
             }
+
+            body{
+                background-image: url(/img/bgcreep.jpg);
+                background-repeat: no_repeat;
+                background-size: cover;
+                background-position: center center;
+                background-attachment: fixed;
+            }
+
+            .neonText {
+                color: #fff;
+                text-shadow:
+                    0 0 7px #fff,
+                    0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 42px #0fa,
+                    0 0 82px #0fa,
+                    0 0 92px #0fa,
+                    0 0 102px #0fa,
+                    0 0 151px #0fa;
+                }
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
-                <div class="top-right links">
+                <div class="top-right links neonText">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -85,10 +105,11 @@
                 </div>
             @endif
 
-            <img class="aturjarak" src="/img/parasite.jpg" alt="Put Ur Mask On">
-            <div class="content" id="main">
-                <div class="title m-b-md">
-                    Sistem surat menyurat RPL
+            <div class="neonText">
+                <div class="content" id="main">
+                    <div class="title m-b-md">
+                        Sistem surat menyurat RPL
+                    </div>
                 </div>
             </div>
         </div>

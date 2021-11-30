@@ -1,5 +1,7 @@
 @extends('layouts.app')
+@extends('layouts.bg-landing')
 
+@section('bg-image')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

@@ -27,14 +27,17 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @php $no=1; @endphp
                                 @foreach($srt as $s)
                                 <tr>
-                                    <td>{{ $s->id }}</td>
+                                    <td>{{ $no++ }}</td>
                                     <td>{{ $s->no_surat }}</td>
                                     <td>{{ $s->jenis_surat }}</td>
                                     <td>{{ $s->status }}</td>
                                     <td>{{ $s->created_at }}</td>
-                                    <td>@if($s->status == 'Disetujui')
+                                    <td>@if($s->status == 'sedang diproses')
+                                        <a href="/surat/view/{{$s->id}}" class="btn btn-info"><img src="/img/view.png" alt="Print" width="25" height="20"></a>
+                                        @elseif($s->status == 'Disetujui')
                                         <a href="/surat/template/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>
                                     @elseif ($s->status == 'Ditolak')
                                         <a href="/surat/edit/{{$s->id}}" class="btn btn-warning"><img src="/img/editicon.png" alt="Edit" width="20" height="20"></a>
