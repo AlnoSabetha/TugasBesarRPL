@@ -45,7 +45,7 @@
 
 		<td>
 		<center>
-					<font size="2"><b><u>SURAT TUGAS</u></b></font><br>
+					<font size="2"><b><u>SURAT KETERANGAN</u></b></font><br>
 					<font size="2">Nomor: {{ $nosur }}</font><br>
 	</center>
 				</td>
@@ -57,7 +57,7 @@
 		<table width="625">
 			<tr>
 		       <td>
-               <p>Dengan ini Dekan Fakultas Teknologi Informasi Universitas Kristen Duta Wacana Yogyakarta  <br> memberikan tugas kepada para mahasiswa ini :</p>
+               <p>{{ $jabatan }} Himpunan Mahasiswa Sistem Infromasi Universitas Kristen Duta Wacana  <br> {{ $tahun }} dengan ini menyatakan bahwa</p>
 
 <table>
     <tr>
@@ -70,18 +70,28 @@
         <td style="width: 5%;">:</td>
         <td style="width: 65%;">{{ $nim }}</td>
     </tr>
+    <tr>
+        <td style="width: 30%;">Program Studi</td>
+        <td style="width: 5%;">:</td>
+        <td style="width: 65%;">Sistem Informasi</td>
+    </tr>
+    <tr>
+        <td style="width: 30%;">Fakultas</td>
+        <td style="width: 5%;">:</td>
+        <td style="width: 65%;">Teknologi Informasi</td>
+    </tr>
 </table>
 
-<p>{{ $tujuan }} {{ $keterangan }} {{ $name }} {{ $alamat }} Demikian Surat ini dibuat untuk dapat dipergunakan  sebagaimana perlunya.
-	Kepada penerima tugas setelah menyelesaikan tugas dimohon menyampaikan laporan kepada pemberi tugas
+
+<p>Telah menjadi sebagai Badan Pengurus Harian ({{ $jabatan }}) Himpunan Mahasiswa Sistem Informasi UNiversitas Kristen Duta Wacana dalam periode jabatan {{ $tahun }}.
+</p>
+<p>Demikian kiranya surat keterangan ini dibuat supaya dapat dipergunakan sebagaimana mestinya
 </p>
 
-
-
-<div style="width: 50%; text-align: left; float: right;">Waktu dan tempat menandatangani</div><br>
+<div style="width: 50%; text-align: left; float: right;">$Waktu dan tempat menandatangani</div><br>
 <div style="width: 50%; text-align: left; float: right;">Yang bertanda tangan,</div><br><br>
 <div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
-<div style="width: 50%; text-align: left; float: right;">{{ $name }}</div>
+<div style="width: 50%; text-align: left; float: right;">{{ $namettd }}</div>
 
 </div>
 

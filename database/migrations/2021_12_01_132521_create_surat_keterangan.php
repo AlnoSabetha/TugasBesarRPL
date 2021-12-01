@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateInputSurat extends Migration
+class CreateSuratKeterangan extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,12 @@ class CreateInputSurat extends Migration
      */
     public function up()
     {
-        Schema::create('input_surat_tugas', function (Blueprint $table) {
+        Schema::create('surat_keterangan', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('tujuan_surat');
-            $table->string('nama_mitra');
-            $table->string('alamat_mitra');
-            $table->string('keterangan');
+            $table->string('jabatan');
+            $table->string('periode');
+            $table->string('kota');
             $table->date('tanggal');
-            $table->string('waktu');
-            $table->string('tempat');
             $table->integer('nim');
             $table->string('nama');
             $table->string('jenis_surat');
@@ -38,6 +35,6 @@ class CreateInputSurat extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('input_surat_tugas');
+        Schema::dropIfExists('surat_keterangan');
     }
 }

@@ -47,7 +47,7 @@
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                            <input type="text" class="form-control btn-black" name="tanggal" id="floatingInput">
+                                            <input type="date" class="form-control btn-black" name="tanggal" id="floatingInput">
                                             <label for="floatingInput">Tanggal</label>
                                             </div>
 
