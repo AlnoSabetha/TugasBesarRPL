@@ -27,7 +27,6 @@
                                             <label for="floatingInput">Tujuan Surat</label>
                                             </div>
                                             
-
                                             <div class="form-floating mb-2">
                                             <input type="text" class="form-control btn-black" name="nama_mitra" id="floatingInput">
                                             <label for="floatingInput">Nama Mitra</label>

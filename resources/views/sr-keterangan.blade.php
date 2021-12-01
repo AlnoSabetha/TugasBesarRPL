@@ -23,6 +23,11 @@
                                             </div>
 
                                             <div class="form-floating mb-2">
+                                            <input type="text" class="form-control btn-black" name="periode" id="floatingInput">
+                                            <label for="floatingInput">Periode</label>
+                                            </div>
+
+                                            <div class="form-floating mb-2">
                                             <input type="text" class="form-control btn-black" name="kota" id="floatingInput">
                                             <label for="floatingInput">Kota</label>
                                             </div>
@@ -30,11 +35,6 @@
                                             <div class="form-floating mb-2">
                                             <input type="text" class="form-control btn-black" name="tanggal" id="floatingInput">
                                             <label for="floatingInput">Tanggal</label>
-                                            </div>
-
-                                            <div class="form-floating mb-3">
-                                            <input type="text" class="form-control btn-black" name="keterangan" id="floatingInput">
-                                            <label for="floatingInput">Keterangan</label>
                                             </div>
 
                                             <button class="w-100 btn btn-lg btn-primary btn-success text-dark" type="submit" value="Simpan">Kirim</button>
