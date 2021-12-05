@@ -20,7 +20,7 @@
                                             <input type="text" class="form-control btn-black" name="tujuan_surat" id="floatingInput">
                                             <label for="floatingInput">Tujuan Surat</label>
                                             </div>
-                                            
+
 
                                             <div class="form-floating mb-2">
                                             <input type="text" class="form-control btn-black" name="nama_mitra" id="floatingInput">
@@ -52,7 +52,7 @@
                                             <label for="floatingInput">Tempat</label>
                                             </div>
 
-                                            
+
 
                                             <button class="w-100 btn btn-lg btn-primary btn-success text-dark" type="submit" value="Simpan">Kirim</button>
                             </div>

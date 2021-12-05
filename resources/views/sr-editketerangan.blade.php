@@ -7,7 +7,7 @@
             <div class="col-md-8">
                 <div class="card">
 
-                    <form method="post" action="/surat/updated/{{ $srt->id }}">
+                    <form method="post" action="/surat/updatedket/{{ $srt->id }}">
                     @csrf               <!-- {{ csrf_field() }} -->
                     @method('PUT')      <!-- {{ method_field('PUT') }} -->
                     <div class="row d-flex justify-content-center mt-5">

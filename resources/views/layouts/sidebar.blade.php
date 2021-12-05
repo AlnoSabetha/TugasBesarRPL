@@ -68,12 +68,11 @@
                                     <a class="nav-link" href="#">Surat Tugas</a>
                                     <a class="nav-link" href="layout-sidenav-light.html">Surat Keterangan</a>
                                     <a class="nav-link" href="layout-sidenav-light.html">Surat Berita Acara</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Surat Keputusan</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Surat Permohonan</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Surat Berita Acara</a>
                                 </nav>
                             </div>
-                            <a class="nav-link" href="/surat/admin">
-                                <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i></div>
-                                Permohonan Surat
-                            </a>
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">

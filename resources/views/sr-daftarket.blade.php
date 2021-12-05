@@ -12,7 +12,7 @@
                     <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Surat Tugas
+                                Surat Keterangan
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
@@ -38,9 +38,9 @@
                                     <td>@if($s->status == 'sedang diproses')
                                         <a href="/surat/view/{{$s->id}}" class="btn btn-info"><img src="/img/view.png" alt="Print" width="25" height="20"></a>
                                         @elseif($s->status == 'disetujui')
-                                        <a href="/surat/template/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>
+                                        <a href="/surat/templateket/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>
                                     @elseif ($s->status == 'ditolak')
-                                        <a href="/surat/edit/{{$s->id}}" class="btn btn-warning"><img src="/img/editicon.png" alt="Edit" width="20" height="20"></a>
+                                        <a href="/surat/editket/{{$s->id}}" class="btn btn-warning"><img src="/img/editicon.png" alt="Edit" width="20" height="20"></a>
                                         <a href="/surat/hapus/{{$s->id}}" class="btn btn-danger"><img src="/img/deleteicon.png" alt="Delete" width="20" height="20"></a>@endif</td>
                                 </tr>
                                 @endforeach

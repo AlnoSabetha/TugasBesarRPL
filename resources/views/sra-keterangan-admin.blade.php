@@ -12,7 +12,7 @@
                     <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Surat Tugas
+                                Surat Keterangan
                             </div>
                             <div class="card-body">
                                 <table class="table table-hover">
@@ -35,9 +35,9 @@
                                     <td>{{ $s->nama }}</td>
                                     <td>{{ $s->jenis_surat }}</td>
                                     <td>{{ $s->created_at }}</td>
-                                    <td><a href="/surat/view/{{$s->id}}" class="btn btn-info"><img src="/img/view.png" alt="Print" width="25" height="20"></a>
-                                        <a href="/surat/admin/setuju/{{$s->id}}" class="btn btn-success"><img src="/img/konfirm.png" alt="disetujui" height="20" width="20"></a>
-                                        <a href="/surat/admin/tolak/{{$s->id}}" class="btn btn-danger"><img src="/img/rejected.png" alt="disetujui" height="20" width="20"></a></td>
+                                    <td><a href="/suratket/view/{{$s->id}}" class="btn btn-info"><img src="/img/view.png" alt="Print" width="25" height="20"></a>
+                                        <a href="/suratket/admin/setuju/{{$s->id}}" class="btn btn-success"><img src="/img/konfirm.png" alt="disetujui" height="20" width="20"></a>
+                                        <a href="/suratket/admin/tolak/{{$s->id}}" class="btn btn-danger"><img src="/img/rejected.png" alt="disetujui" height="20" width="20"></a></td>
                                     </tr>
                                 @endforeach
                             </tbody>

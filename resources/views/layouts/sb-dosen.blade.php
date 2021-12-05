@@ -67,6 +67,8 @@
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="/surat/tambah">Surat Tugas</a>
                                     <a class="nav-link" href="/surat/tambahket">Surat Keterangan</a>
+                                    <a class="nav-link" href="/surat/tambahket">Surat Berita Acara</a>
+                                    <a class="nav-link" href="/surat/tambahket">Surat Permohonan</a>
                                 </nav>
                             </div>
                         </div>
@@ -78,7 +80,7 @@
                 </nav>
             </div>
             <div class="layoutSidenav_content">
-                @yield('konten-mhs')
+                @yield('konten-dosen')
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

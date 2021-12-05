@@ -29,24 +29,32 @@ Route::get('dosen', function () { return view('dosen'); })->middleware(['checkRo
 Route::get('mahasiswa', 'SuratController@dashboardsrt')->middleware(['checkRole:mahasiswa']);
 //Route::get('mahasiswa/home', [HomeController::class, 'mahasiswaHome'])->name('mahasiswa.home')->middleware('Role');
 
-//Routing surat mahasiswa
+//Routing surat tugas mahasiswa
 Route::get('/surat', 'SuratController@daftarsrt');
-Route::get('/suratkeluar', 'SuratController@srtkeluar');
 Route::get('/surat/tambah', 'SuratController@tambah');
-Route::get('/surat/tambahkeputusan', 'SuratController@tambahkeputusan');
-Route::get('/surat/tambahberitacara', 'SuratController@tambahberitacara');
 Route::post('/surat/simpan', 'SuratController@simpan');
 Route::get('/surat/hapus/{id}', 'SuratController@hapus');
 Route::get('/surat/edit/{id}', 'SuratController@edit');
 Route::put('/surat/updated/{id}', 'SuratController@updated');
 Route::get('/surat/template/{id}', 'SuratController@template');
 
-//Routing surat admin
-Route::get('/surat/admin', 'AdminController@indexAdmin');
-Route::get('/admin', 'AdminController@dashboard');
+//Routing surat keterangan mahasiswa
+Route::get('/suratket', 'SuratKetController@daftarsrt');
+Route::get('/surat/tambahket', 'SuratKetController@tambah');
+Route::post('/surat/simpanket', 'SuratKetController@simpan');
+Route::get('/surat/editket/{id}', 'SuratKetController@edit');
+Route::put('/surat/updatedket/{id}', 'SuratKetController@updated');
+Route::get('/surat/templateket/{id}', 'SuratKetController@template');
+
+//Routing surat tugas mhs->admin
+Route::get('/surat/admin', 'AdminController@daftartugas');
 Route::get('/surat/view/{id}', 'AdminController@view');
-Route::get('/surat/admin/setuju/{id}', 'AdminController@confirm');
-Route::get('/surat/admin/tolak/{id}', 'AdminController@reject');
+Route::get('/surat/admin/setuju/{id}', 'AdminController@confirmtugas');
+Route::get('/surat/admin/tolak/{id}', 'AdminController@rejecttugas');
+//routing surat keterangan mhs->admin
+Route::get('/suratket/admin', 'AdminController@daftarket');
+Route::get('/suratket/admin/setuju/{id}', 'AdminController@confirmket');
+Route::get('/suratket/admin/tolak/{id}', 'AdminController@rejectket');
 
 //template
 Route::get('/generate-barcode', [ProductController::class, 'index'])->name('generate.barcode');

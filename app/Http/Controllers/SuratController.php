@@ -16,12 +16,6 @@ class SuratController extends Controller
         return view ('sr-daftar', ['srt' => $srt]);
     }
 
-    /* public function srtkeluar()
-    {
-        $srt = surat::all();
-        return view ('sk-mhs', ['srt' => $srt]);
-    } */
-
     public function dashboardsrt()
     {
         $nim = Auth::user()->nim;
@@ -32,16 +26,6 @@ class SuratController extends Controller
     public function tambah()
     {
         return view ('sr-tambah');
-    }
-
-    public function tambahkeputusan()
-    {
-        return view ('sr-keputusan');
-    }
-
-    public function tambahberitacara()
-    {
-        return view ('sr-beritaacara');
     }
 
     public function simpan(Request $request)
