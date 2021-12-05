@@ -22,7 +22,7 @@
                                             </div>
 
                                             <div class="form-floating mb-2">
-                                            <input type="textarea" class="form-control btn-black" name="membimbimbing" id="floatingInput">
+                                            <input type="textarea" class="form-control btn-black" name="membimbing" id="floatingInput">
                                             <label for="floatingInput">Membimbing</label>
                                             </div>
 
