@@ -68,7 +68,7 @@
             }
 
             body{
-                background-image: url(/img/bgcreep.jpg);
+                background-image: url(/img/forest.jpg);
                 background-repeat: no_repeat;
                 background-size: cover;
                 background-position: center center;
