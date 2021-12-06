@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSuratKeputusan extends Migration
+class CreateSuratPersonalia extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,16 @@ class CreateSuratKeputusan extends Migration
      */
     public function up()
     {
-        Schema::create('surat_keputusan', function (Blueprint $table) {
+        Schema::create('surat_personalia', function (Blueprint $table) {
             $table->id();
             $table->string('tujuan');
-            $table->string('menimbang');
-            $table->string('mengingat');
-            $table->string('menetapkan');
-            $table->string('kota');
+            $table->string('nama');
             $table->integer('nik');
+            $table->string('kepada');
+            $table->string('keperluan');
             $table->date('tanggal');
             $table->string('pejabat');
-            $table->string('namaygttd');
+            $table->string('namattd');
             $table->string('jenis_surat');
             $table->string('status');
             $table->string('no_surat');
@@ -38,6 +37,6 @@ class CreateSuratKeputusan extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('surat_keputusan');
+        Schema::dropIfExists('surat_personalia');
     }
 }
