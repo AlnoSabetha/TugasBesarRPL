@@ -22,7 +22,7 @@
                                                     <div class="card bg-primary text-white mb-4">
                                                         <div class="card-body">Surat Tugas</div>
                                                         <div class="card-footer d-flex align-items-center justify-content-between">
-                                                            <a class="small text-white stretched-link" href="/surat">View Details</a>
+                                                            <a class="small text-white stretched-link" href="/surat/dosen">View Details</a>
                                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                                         </div>
                                                     </div>
@@ -31,7 +31,7 @@
                                                     <div class="card bg-warning text-white mb-4">
                                                         <div class="card-body">Surat Keterangan</div>
                                                         <div class="card-footer d-flex align-items-center justify-content-between">
-                                                            <a class="small text-white stretched-link" href="/suratket">View Details</a>
+                                                            <a class="small text-white stretched-link" href="/suratket/dosen">View Details</a>
                                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                                         </div>
                                                     </div>
@@ -40,7 +40,7 @@
                                                     <div class="card bg-success text-white mb-4">
                                                         <div class="card-body">Surat Berita Acara</div>
                                                         <div class="card-footer d-flex align-items-center justify-content-between">
-                                                            <a class="small text-white stretched-link" href="/suratket">View Details</a>
+                                                            <a class="small text-white stretched-link" href="/suratba/dosen">View Details</a>
                                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                                         </div>
                                                     </div>
@@ -49,7 +49,7 @@
                                                     <div class="card bg-danger text-white mb-4">
                                                         <div class="card-body">Surat Permohonan</div>
                                                         <div class="card-footer d-flex align-items-center justify-content-between">
-                                                            <a class="small text-white stretched-link" href="/suratket">View Details</a>
+                                                            <a class="small text-white stretched-link" href="/suratmohon/dosen">View Details</a>
                                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                                         </div>
                                                     </div>

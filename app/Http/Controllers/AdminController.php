@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Surat;
 use App\SuratKet;
+use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
-    //surat tugas mahasiswa
+    //validasi surat tugas mahasiswa
     public function daftartugas()
     {
         $srt = Surat::all();
@@ -39,7 +40,7 @@ class AdminController extends Controller
         return redirect('/surat/admin');
     }
 
-    //surat keterangan mahasiswa
+    //validasi surat keterangan mahasiswa
     public function daftarket()
     {
         $srt = SuratKet::all();
@@ -62,5 +63,26 @@ class AdminController extends Controller
         $srt->status = 'ditolak';
         $srt->save();
         return redirect('/suratket/admin');
+    }
+
+    //surat tugas admin
+    public function tambahtugas()
+    {
+        return view ('sra-tambah-admin');
+    }
+
+    public function simpantugas(Request $request)
+    {
+        $nim = Auth::user()->nim;
+        $nama = Auth::user()->name;
+        surat::create([
+            'tujuan_surat' => $request->tujuan_surat,
+            'nama_mitra' => $request->nama_mitra,
+            'alamat_mitra' => $request->alamat_mitra,
+            'keterangan' => $request->keterangan,
+            'nim' => $nim,
+            'nama' => $nama
+        ]);
+        return redirect('/surat/admin');
     }
 }

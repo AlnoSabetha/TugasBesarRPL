@@ -80,7 +80,7 @@
 
 <div style="width: 50%; text-align: left; float: right;">Waktu dan tempat menandatangani</div><br>
 <div style="width: 50%; text-align: left; float: right;">Yang bertanda tangan,</div><br><br>
-<div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
+<div style="width: 50%; text-align: left; float: right;"><a href="https://ibb.co/FXWzk8Y"><img src="https://i.ibb.co/FXWzk8Y/ttd-herling.png" alt="ttd-herling" border="0"></a></div><br><br><br><br><br><br><br><br>
 <div style="width: 50%; text-align: left; float: right;">{{ $name }}</div>
 
 </div>
