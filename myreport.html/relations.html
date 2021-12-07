@@ -50,7 +50,7 @@
 <div class="page">
     <div class="content content-first">
         <div class="report-details">
-            Created at 2021-12-01 07:32:01        , with PHPMetrics v2.7.4 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
+            Created at 2021-12-06 14:41:12        , with PHPMetrics v2.7.4 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
         </div>
 
         
@@ -289,7 +289,8 @@
         "size": 3000,
         "relations": [
             "\\App\\Http\\Controllers\\Controller",
-            "\\App\\Surat"
+            "\\App\\Surat",
+            "\\App\\SuratKet"
         ]
     },
     {
@@ -299,6 +300,13 @@
     },
     {
         "name": "\\App\\Surat",
+        "size": 3000,
+        "relations": [
+            "\\Illuminate\\Database\\Eloquent\\Model"
+        ]
+    },
+    {
+        "name": "\\App\\SuratKet",
         "size": 3000,
         "relations": [
             "\\Illuminate\\Database\\Eloquent\\Model"
@@ -402,6 +410,16 @@
         "name": "\\Illuminate\\Http\\Request",
         "size": 3000,
         "relations": []
+    },
+    {
+        "name": "\\App\\Http\\Controllers\\SuratKetController",
+        "size": 3000,
+        "relations": [
+            "\\App\\Http\\Controllers\\Controller",
+            "\\Illuminate\\Support\\Facades\\Auth",
+            "\\App\\SuratKet",
+            "\\Illuminate\\Http\\Request"
+        ]
     },
     {
         "name": "\\App\\Http\\Kernel",
@@ -636,6 +654,30 @@
     },
     {
         "name": "\\CreateInputSurat",
+        "size": 3000,
+        "relations": [
+            "\\Illuminate\\Database\\Migrations\\Migration",
+            "\\Illuminate\\Support\\Facades\\Schema"
+        ]
+    },
+    {
+        "name": "\\CreateSuratKeterangan",
+        "size": 3000,
+        "relations": [
+            "\\Illuminate\\Database\\Migrations\\Migration",
+            "\\Illuminate\\Support\\Facades\\Schema"
+        ]
+    },
+    {
+        "name": "\\CreateSuratBeritaAcra",
+        "size": 3000,
+        "relations": [
+            "\\Illuminate\\Database\\Migrations\\Migration",
+            "\\Illuminate\\Support\\Facades\\Schema"
+        ]
+    },
+    {
+        "name": "\\CreateSuratKeputusan",
         "size": 3000,
         "relations": [
             "\\Illuminate\\Database\\Migrations\\Migration",

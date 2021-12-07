@@ -50,7 +50,7 @@
 <div class="page">
     <div class="content content-first">
         <div class="report-details">
-            Created at 2021-12-01 07:32:01        , with PHPMetrics v2.7.4 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
+            Created at 2021-12-06 14:41:13        , with PHPMetrics v2.7.4 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
         </div>
 
         
@@ -71,13 +71,13 @@
         <div class="column">
             <div class="bloc bloc-number">
                 <div class="label">Warnings</div>
-                <div class="number">2</div>
+                <div class="number">1</div>
             </div>
         </div>
         <div class="column">
             <div class="bloc bloc-number">
                 <div class="label">Errors</div>
-                <div class="number">1</div>
+                <div class="number">2</div>
             </div>
         </div>
         <div class="column">
@@ -103,10 +103,10 @@
                     
                             <tr>
                                 <td>
-                                    <a onclick="return toggle('bloc-61a716e1b71859.11078960');">
+                                    <a onclick="return toggle('bloc-61ae12f9665c83.84895085');">
                                         <span class="path">App\Http\Controllers\SuratController</span>
                                     </a>
-                                    <div class="violation-list" id="bloc-61a716e1b71859.11078960">
+                                    <div class="violation-list" id="bloc-61ae12f9665c83.84895085">
                                                                                     <div class="violation">
                                                 <div class="name">
                                                     Blob / God object                                                    <span
@@ -116,8 +116,39 @@
                                                 <div
                                                     class="description">A blob object (or "god class") does not follow the Single responsibility principle.<br />
 <br />
-* object has lot of public methods  (11, excluding getters and setters)<br />
-* object has a high Lack of cohesion of methods (LCOM=11)<br />
+* object has lot of public methods  (9, excluding getters and setters)<br />
+* object has a high Lack of cohesion of methods (LCOM=9)<br />
+* object knows everything (and use lot of external classes)<br />
+<br />
+Maybe you should reducing the number of methods splitting this object in many sub objects.</div>
+
+                                            </div>
+                                                                            </div>
+                                </td>
+
+                                <td valign="top">
+                                                                            <span
+                                            class="badge level level-error"> Blob / God object</span>
+                                                                    </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <a onclick="return toggle('bloc-61ae12f9665ec8.59782780');">
+                                        <span class="path">App\Http\Controllers\SuratKetController</span>
+                                    </a>
+                                    <div class="violation-list" id="bloc-61ae12f9665ec8.59782780">
+                                                                                    <div class="violation">
+                                                <div class="name">
+                                                    Blob / God object                                                    <span
+                                                        class="badge level level-error">error</span>
+
+                                                </div>
+                                                <div
+                                                    class="description">A blob object (or "god class") does not follow the Single responsibility principle.<br />
+<br />
+* object has lot of public methods  (9, excluding getters and setters)<br />
+* object has a high Lack of cohesion of methods (LCOM=9)<br />
 * object knows everything (and use lot of external classes)<br />
 <br />
 Maybe you should reducing the number of methods splitting this object in many sub objects.</div>
@@ -151,22 +182,10 @@ Maybe you should reducing the number of methods splitting this object in many su
                     
                             <tr>
                                 <td>
-                                    <a onclick="return toggle('bloc-61a716e1b71ae');">
+                                    <a onclick="return toggle('bloc-61ae12f966613');">
                                         <span class="path">App\Http\Controllers</span>
                                     </a>
-                                    <div class="violation-list" id="bloc-61a716e1b71ae">
-                                                                                    <div class="violation">
-                                                <div class="name">
-                                                    Stable Abstractions Principle                                                    <span
-                                                            class="badge level level-warning">warning</span>
-
-                                                </div>
-                                                <div
-                                                        class="description">Packages should be either abstract and stable or concrete and instable.<br />
-<br />
-This package is instable and abstract.</div>
-
-                                            </div>
+                                    <div class="violation-list" id="bloc-61ae12f966613">
                                                                                     <div class="violation">
                                                 <div class="name">
                                                     Stable Dependencies Principle                                                    <span
@@ -176,18 +195,16 @@ This package is instable and abstract.</div>
                                                 <div
                                                         class="description">Packages should depend in the direction of stability.<br />
 <br />
-This package is more stable (0.455) than 1 package(s) that it depends on.<br />
+This package is more stable (0.5) than 1 package(s) that it depends on.<br />
 The packages that are more stable are<br />
 <br />
-* App (0.625)</div>
+* App (0.556)</div>
 
                                             </div>
                                                                             </div>
                                 </td>
 
                                 <td valign="top">
-                                                                            <span
-                                                class="badge level level-warning"> Stable Abstractions Principle</span>
                                                                             <span
                                                 class="badge level level-warning"> Stable Dependencies Principle</span>
                                                                     </td>
