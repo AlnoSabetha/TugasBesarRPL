@@ -36,7 +36,7 @@ Route::post('/surat/simpan', 'SuratController@simpan');
 Route::get('/surat/hapus/{id}', 'SuratController@hapus');
 Route::get('/surat/edit/{id}', 'SuratController@edit');
 Route::put('/surat/updated/{id}', 'SuratController@updated');
-Route::get('/surat/template/{id}', 'AdminController@template');
+Route::get('/surat/template/{id}', 'SuratController@template');
 
 //Routing surat keterangan mahasiswa
 Route::get('/suratket', 'SuratKetController@daftarsrt');
