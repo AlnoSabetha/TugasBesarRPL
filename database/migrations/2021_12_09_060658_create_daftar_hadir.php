@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSuratPermohonan extends Migration
+class CreateDaftarHadir extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,13 @@ class CreateSuratPermohonan extends Migration
      */
     public function up()
     {
-        Schema::create('surat_permohonan', function (Blueprint $table) {
+        Schema::create('daftar_hadir', function (Blueprint $table) {
             $table->id();
-            $table->string('tujuan');
-            $table->string('nama');
-            $table->integer('nik');
-            $table->string('kepada');
-            $table->string('keperluan');
-            $table->date('tanggal');
-            $table->string('pejabat');
+            $table->string('nama_kegiatan');
+            $table->date('tanggal_pelaksanaan');
+            $table->string('waktu');
+            $table->string('tempat');
+            $table->string('pembicara');
             $table->string('namattd');
             $table->string('jenis_surat');
             $table->string('status');
@@ -37,6 +35,6 @@ class CreateSuratPermohonan extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('surat_permohonan');
+        Schema::dropIfExists('daftar_hadir');
     }
 }
