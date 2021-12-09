@@ -12,7 +12,7 @@
                     <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Surat Tugas
+                                Surat Keterangan
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
@@ -36,9 +36,9 @@
                                     <td>{{ $s->status }}</td>
                                     <td>{{ $s->created_at }}</td>
                                     <td>@if($s->status == 'disetujui')
-                                        <a href="/surat/dosen/templatetgs/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>
+                                        <a href="/surat/dosen/templateba/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>
                                     @elseif ($s->status == 'ditolak')
-                                        <a href="/surat/dosen/edittgs/{{$s->id}}" class="btn btn-warning"><img src="/img/editicon.png" alt="Edit" width="20" height="20"></a>@endif</td>
+                                        <a href="/surat/dosen/editba/{{$s->id}}" class="btn btn-warning"><img src="/img/editicon.png" alt="Edit" width="20" height="20"></a>@endif</td>
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -50,7 +50,7 @@
         </div>
     </div>
 
-
+@endsection
 @endsection
 
 

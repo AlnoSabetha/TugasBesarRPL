@@ -47,7 +47,36 @@ Route::put('/surat/updatedket/{id}', 'SuratKetController@updated');
 Route::get('/surat/templateket/{id}', 'SuratKetController@template');
 
 //Routing surat tugas dosen
-Route::get('/surat/dosen', 'SuratController@daftarsrt');
+Route::get('/surattgs/dosen', 'DosenController@daftarTugas');
+Route::get('/surat/dosen/tambahtgs', 'DosenController@tambahTugas');
+Route::post('/surat/dosen/simpantgs', 'DosenController@simpanTugas');
+Route::get('/surat/dosen/edittgs/{id}', 'DosenController@editTugas');
+Route::put('/surat/dosen/updatedtgs/{id}', 'DosenController@updatedTugas');
+Route::get('/surat/dosen/templatetgs/{id}', 'DosenController@templateTugas');
+
+//Routing surat keterangan dosen
+Route::get('/suratket/dosen', 'DosenController@daftarKeterangan');
+Route::get('/surat/dosen/tambahket', 'DosenController@tambahKeterangan');
+Route::post('/surat/dosen/simpanket', 'DosenController@simpanKeterangan');
+Route::get('/surat/dosen/editket/{id}', 'DosenController@editKeterangan');
+Route::put('/surat/dosen/updatedket/{id}', 'DosenController@updatedKeterangan');
+Route::get('/surat/dosen/templateket/{id}', 'DosenController@templateKeterangan');
+
+//Routing  surat berita acara dosen
+Route::get('/suratba/dosen', 'DosenController@daftarBeritaAcara');
+Route::get('/surat/dosen/tambahba', 'DosenController@tambahBeritaAcara');
+Route::post('/surat/dosen/simpanba', 'DosenController@simpanBeritaAcara');
+Route::get('/surat/dosen/editba/{id}', 'DosenController@editBeritaAcara');
+Route::put('/surat/dosen/updatedba/{id}', 'DosenController@updatedBeritaAcara');
+Route::get('/surat/dosen/templateba/{id}', 'DosenController@templateBeritaAcara');
+
+//Routing surat permohonan dosen
+Route::get('/suratsper/dosen', 'DosenController@daftarPermohonan');
+Route::get('/surat/dosen/tambahsper', 'DosenController@tambahPermohonan');
+Route::post('/surat/dosen/simpansper', 'DosenController@simpanPermohonan');
+Route::get('/surat/dosen/editsper/{id}', 'DosenController@editPermohonan');
+Route::put('/surat/dosen/updatedsper/{id}', 'DosenController@updatedPermohonan');
+Route::get('/surat/dosen/templatesper/{id}', 'DosenController@templatePermohonan');
 
 //Routing validasi surat tugas admin
 Route::get('/surat/admin', 'AdminController@daftartugas');

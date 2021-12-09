@@ -8,13 +8,13 @@
         <meta name="author" content="" />
         <title>Dashboard - SB Admin</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <link href="css/styles1.css" rel="stylesheet" />
+        <link href="/css/styles1.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="/home">Sistem Surat UKDW</a>
+            <a class="navbar-brand ps-3" href="index.html">Sistem Surat UKDW</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <ul class="navbar-nav ml-auto">
@@ -54,7 +54,7 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <a class="nav-link" href="mahasiswa">
+                            <a class="nav-link" href="/dosen">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
@@ -65,10 +65,10 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="/surat/tambah">Surat Tugas</a>
-                                    <a class="nav-link" href="/surat/tambahket">Surat Keterangan</a>
-                                    <a class="nav-link" href="/surat/tambahket">Surat Berita Acara</a>
-                                    <a class="nav-link" href="/surat/tambahket">Surat Permohonan</a>
+                                    <a class="nav-link" href="/surat/dosen/tambahtgs">Surat Tugas</a>
+                                    <a class="nav-link" href="/surat/dosen/tambahket">Surat Keterangan</a>
+                                    <a class="nav-link" href="/surat/dosen/tambahba">Surat Berita Acara</a>
+                                    <a class="nav-link" href="/surat/dosen/tambahsper">Surat Permohonan</a>
                                 </nav>
                             </div>
                         </div>

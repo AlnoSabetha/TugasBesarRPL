@@ -47,8 +47,8 @@
 		<center>
 					<font size="4"><b>Berita Acara</b></font><br><br>
 					<font size="3"><b>contoh Kuliah Umum  {{ $tujuan }}</b></font><br>
-					<font size="3"><b>contoh How to build Product {{ $namaacara  }}</b></font><br>
-					<font size="2">No: </font><br>
+					<font size="3"><b>contoh How to build Product {{ $nama_acara  }}</b></font><br>
+					<font size="2">No: {{ $nosur }}</font><br>
 	</center>
 				</td>
 		</table>
@@ -59,8 +59,8 @@
 		<table width="625">
 			<tr>
 		       <td>
-               <p>Pada hari {{ $tanggal }} bertempat di {{ $tempat }} telah dilangsungkan {{ $tujuan }} dengan tema  {{ $namaacara  }} dengan mengundang pembicara yaitu {{ $pembicara }}
-				   acara ini diikuti oleh seluruh civitas akademika UKDW dan perwakilan dari beberapa mitra kerjasama Fakultas Teknologi Informasi UKDW. 
+               <p>Pada hari {{ $tanggal }} bertempat di {{ $tempat }} telah dilangsungkan {{ $tujuan }} dengan tema  {{ $nama_acara  }} dengan mengundang pembicara yaitu {{ $pembicara }}
+				   acara ini diikuti oleh seluruh civitas akademika UKDW dan perwakilan dari beberapa mitra kerjasama Fakultas Teknologi Informasi UKDW.
 				   <br><br> Adapun TOR acara, daftar kehadiran peserta, foto kegiatan seperti terlampir pada berita acara ini.</p>
 
 
@@ -68,11 +68,11 @@
 </p><br>
 
 <center>
-					<font size="2">{{ $waktu dan tempat menandatangani }}</font><br><br>
+					<font size="2"> $waktu dan tempat menandatangani </font><br><br>
 					<font size="2">Mengetahui</font><br>
-					<div style="width: 50%; text-align: left; float: right;">{{ $namamitra }}</div><br><br>
+					<div style="width: 50%; text-align: left; float: right;">{{ $nama_mitra }}</div><br><br>
 					<div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br>
-					<div style="width: 50%; text-align: left; float: right;">{{ $namepengurusmitra }}</div>
+					<div style="width: 50%; text-align: left; float: right;">{{ $nama_p_mitra }}</div>
 	</center>
 
 </div>

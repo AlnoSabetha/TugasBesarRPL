@@ -54,15 +54,15 @@
 		<table width="625">
 			<tr>
 		       <td>
-         
-            
+
+
             <font size="2">Nomor: {{ $nosur }}</font><br>
             <font size="2">Hal: Permohonan Diskusi</font><br>
             <font size="2">Lamp: ---</font><br><br>
-            <font size="2">{{ $tanggal }}</font><br><br><br>
+            <font size="2">{{ $tgl_pembuatan }}</font><br><br><br>
             <font size="2"><b>Kepada Yth :</b></font><br>
             <font size="2"><b>{{ $nama_mitra }}</b></font><br>
-    
+
 
                <p>Salam sejahtera, <br> Menindaklanjuti pembicaraan beberapa waktu yang lalu antara FTI UKDW dengan pihak {{ $nama_mitra }}, perihal {{ $tujuan }}
              ,dengan ini kami mohon  kesediaan {{$nama_mitra }}</b> untuk meluangkan waktu guma menyelenggarakan {{ $nama_kegiatan }} tersebut diatas. adapun waktu pelaksanaanya adalah:</p>
@@ -70,7 +70,7 @@
     <tr>
         <td style="width: 30%;">Hari/tanggal</td>
         <td style="width: 5%;">:</td>
-        <td style="width: 65%;">{{ $tanggal }}</td>
+        <td style="width: 65%;">{{ $tgl_pelaksanaan }}</td>
     </tr>
 	<tr>
         <td style="width: 30%;">Jam</td>
@@ -86,10 +86,10 @@
 <p>Demikian permohonan kami sampaikan. Atau perhatian dan kerjasama yang diberikan kami <br> mengucapkan terima kasih.
 </p><br>
 
-<div style="width: 50%; text-align: left; float: left;"><b>{{ $pejabat }}, </b></div><br><br>
+<div style="width: 50%; text-align: left; float: left;"><b>$pejabat, </b></div><br><br>
 <div style="width: 50%; text-align: left; float: left;"><b>{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
-<div style="width: 50%; text-align: left; float: left;">{{ $nametdd }}</b></div><br>
-<div style="width: 50%; text-align: left; float: left;"><b>{{ $nik }}</b></div><br>
+<div style="width: 50%; text-align: left; float: left;">$nametdd</b></div><br>
+<div style="width: 50%; text-align: left; float: left;"><b>{{ $nim }}</b></div><br>
 </div>
 
 <script>
