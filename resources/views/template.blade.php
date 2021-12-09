@@ -71,16 +71,17 @@
         <td style="width: 65%;">{{ $nim }}</td>
     </tr>
 </table>
-
-<p>{{ $tujuan }} {{ $keterangan }} {{ $name }} {{ $alamat }} Demikian Surat ini dibuat untuk dapat dipergunakan  sebagaimana perlunya.
+<p>Untuk keperluan {{ $tujuan }} yang dilaksanakan oleh  {{ $name }} yang berada di {{ $alamat }}
+</p>
+<p> {{ $keterangan }}  Demikian Surat ini dibuat untuk dapat dipergunakan  sebagaimana perlunya.
 	Kepada penerima tugas setelah menyelesaikan tugas dimohon menyampaikan laporan kepada pemberi tugas
 </p>
 
 
 
-<div style="width: 50%; text-align: left; float: right;">Waktu dan tempat menandatangani</div><br>
+<div style="width: 50%; text-align: left; float: right;">Yogyakarta, 9 Desember 2021</div><br>
 <div style="width: 50%; text-align: left; float: right;">Yang bertanda tangan,</div><br><br>
-<div style="width: 50%; text-align: left; float: right;"><a href="https://ibb.co/FXWzk8Y"><img src="https://i.ibb.co/FXWzk8Y/ttd-herling.png" alt="ttd-herling" border="0"></a></div><br><br><br><br><br><br><br><br>
+<div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('Tanda Tangan'); !!}</a></div><br><br><br><br><br><br><br><br>
 <div style="width: 50%; text-align: left; float: right;">{{ $name }}</div>
 
 </div>
