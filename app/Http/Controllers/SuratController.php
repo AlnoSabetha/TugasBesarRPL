@@ -76,6 +76,8 @@ class SuratController extends Controller
         'keterangan' => $srt->keterangan,
         'nim' => $srt->nim,
         'nama' => $nama,
+        'ttd' => $srt->ttd,
+        'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
 

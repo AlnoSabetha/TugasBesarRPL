@@ -68,7 +68,7 @@
 </p><br>
 
 <center>
-					<font size="2"> $waktu dan tempat menandatangani </font><br><br>
+					<font size="2">{{ $update }}</font><br><br>
 					<font size="2">Mengetahui</font><br>
 					<div style="width: 50%; text-align: left; float: right;">{{ $nama_mitra }}</div><br><br>
 					<div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br>

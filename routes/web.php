@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -81,12 +82,23 @@ Route::get('/surat/dosen/templatesper/{id}', 'DosenController@templatePermohonan
 //Routing validasi surat tugas admin
 Route::get('/surat/admin', 'AdminController@daftartugas');
 Route::get('/surat/view/{id}', 'AdminController@view');
-Route::get('/surat/admin/setuju/{id}', 'AdminController@confirmtugas');
+Route::put('/surat/admin/setuju/{id}', 'AdminController@confirmtugas');
 Route::get('/surat/admin/tolak/{id}', 'AdminController@rejecttugas');
 //routing validasi surat keterangan admin
 Route::get('/suratket/admin', 'AdminController@daftarket');
-Route::get('/suratket/admin/setuju/{id}', 'AdminController@confirmket');
+Route::get('/suratket/view/{id}', 'AdminController@viewket');
+Route::put('/suratket/admin/setuju/{id}', 'AdminController@confirmket');
 Route::get('/suratket/admin/tolak/{id}', 'AdminController@rejectket');
+//routing validasi surat berita acara admin
+Route::get('/suratba/admin', 'AdminController@daftarBa');
+Route::get('/suratba/view/{id}', 'AdminController@viewBa');
+Route::put('/suratba/admin/setuju/{id}', 'AdminController@confirmBa');
+Route::get('/suratba/admin/tolak/{id}', 'AdminController@rejectBa');
+//Routing  validasi surat permohonan
+Route::get('/suratsper/admin', 'AdminController@daftarSper');
+Route::get('/suratsper/view/{id}', 'AdminController@viewSper');
+Route::put('/suratsper/admin/setuju/{id}', 'AdminController@confirmSper');
+Route::get('/suratsper/admin/tolak/{id}', 'AdminController@rejectSper');
 //Routing buat surat tugas admin
 Route::get('/surattugas/admin/tambah', 'AdminController@tambahtugas');
 Route::post('/surattugas/admin/simpan', 'AdminController@simpantugas');

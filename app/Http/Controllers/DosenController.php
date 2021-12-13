@@ -66,6 +66,8 @@ class DosenController extends Controller
         'keterangan' => $srt->keterangan,
         'nim' => $srt->nim,
         'nama' => $nama,
+        'ttd' => $srt->ttd,
+        'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
 
@@ -120,11 +122,13 @@ class DosenController extends Controller
         $srt = SuratKet::find($id);
         return view('templateketerangan', ['name' => $srt->nama_mitra,
         'jabatan' => $srt->jabatan,
-        'periode' => $srt->periode,
+        'tahun' => $srt->periode,
         'kota' => $srt->kota,
         'tanggal' => $srt->tanggal,
         'nim' => $srt->nim,
         'nama' => $nama,
+        'ttd' => $srt->ttd,
+        'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
 
@@ -193,6 +197,8 @@ class DosenController extends Controller
         'tanggal' => $srt->tanggal,
         'nim' => $srt->nim,
         'nama' => $nama,
+        'ttd' => $srt->ttd,
+        'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
 
@@ -253,18 +259,19 @@ class DosenController extends Controller
     {
         $nama = Auth::user()->name;
         $srt = SuratSper::find($id);
-        return view('templatepermohonan', ['name' => $srt->nama_mitra,
+        return view('templatepermohonan', ['name' => $nama,
         'tgl_pembuatan' => $srt->tgl_pembuatan,
-        'kepada' => $srt->kepada,
+        'nama_mitra' => $srt->kepada,
         'tgl_pelaksanaan' => $srt->tgl_pelaksanaan,
         'waktu' => $srt->waktu,
         'tempat' => $srt->tempat,
         'keperluan' => $srt->keperluan,
-        'nama_mitra' => $nama,
         'tujuan' => $srt->tujuan,
         'nama_kegiatan' => $srt->nama_kegiatan,
         'nim' => $srt->nim,
         'nama' => $nama,
+        'ttd' => $srt->ttd,
+        'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
 }

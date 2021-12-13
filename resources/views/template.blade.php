@@ -79,10 +79,10 @@
 
 
 
-<div style="width: 50%; text-align: left; float: right;">Yogyakarta, 9 Desember 2021</div><br>
+<div style="width: 50%; text-align: left; float: right;">{{ $update }}</div><br>
 <div style="width: 50%; text-align: left; float: right;">Yang bertanda tangan,</div><br><br>
 <div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('Tanda Tangan'); !!}</a></div><br><br><br><br><br><br><br><br>
-<div style="width: 50%; text-align: left; float: right;">{{ $name }}</div>
+<div style="width: 50%; text-align: left; float: right;">{{ $ttd }}</div>
 
 </div>
 

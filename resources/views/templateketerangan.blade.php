@@ -83,15 +83,15 @@
 </table>
 
 
-<p>Telah menjadi sebagai Badan Pengurus Harian ({{ $jabatan }}) Himpunan Mahasiswa Sistem Informasi UNiversitas Kristen Duta Wacana dalam periode jabatan {{ $tahun }}.
+<p>Telah menjadi sebagai Badan Pengurus Harian ({{ $jabatan }}) Himpunan Mahasiswa Sistem Informasi Universitas Kristen Duta Wacana dalam periode jabatan {{ $tahun }}.
 </p>
 <p>Demikian kiranya surat keterangan ini dibuat supaya dapat dipergunakan sebagaimana mestinya
 </p>
 
-<div style="width: 50%; text-align: left; float: right;">$Waktu dan tempat menandatangani</div><br>
+<div style="width: 50%; text-align: left; float: right;">{{ $update }}</div><br>
 <div style="width: 50%; text-align: left; float: right;">Yang bertanda tangan,</div><br><br>
 <div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
-<div style="width: 50%; text-align: left; float: right;">{{ $namettd }}</div>
+<div style="width: 50%; text-align: left; float: right;">{{ $ttd }}</div>
 
 </div>
 

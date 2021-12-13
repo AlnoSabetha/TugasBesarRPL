@@ -56,8 +56,8 @@
 		<table width="625">
 			<tr>
 		       <td>
-         
-            
+
+
             <font size="2">Nomor: {{ $nosur }}</font><br>
             <font size="2">Hal: {{ $hal }}</font><br>
             <font size="2">Lamp: 1 lembar</font><br><br><br>
@@ -74,7 +74,7 @@
 
 <div style="width: 50%; text-align: left; float: left;">{{ $pejabat }}, </div><br><br>
 <div style="width: 50%; text-align: left; float: left;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
-<div style="width: 50%; text-align: left; float: left;">{{ $nametdd }}</div><br>
+<div style="width: 50%; text-align: left; float: left;">{{ $ttd }}</div><br>
 <div style="width: 50%; text-align: left; float: left;">{{ $nik }}</div><br>
 </div>
 

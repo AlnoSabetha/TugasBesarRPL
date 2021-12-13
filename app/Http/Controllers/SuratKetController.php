@@ -77,7 +77,8 @@ class SuratKetController extends Controller
         'tahun' => $srt->tanggal,
         'nim' => $srt->nim,
         'nama' => $nama,
-        'namettd' => 'pejabat',
+        'ttd' => $srt->ttd,
+        'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
 

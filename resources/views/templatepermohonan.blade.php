@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>contoh surat pengunguman</title>
+	<title>contoh surat pengumuman</title>
 	<style type="text/css">
 		table {
 			border-style: double;
@@ -88,7 +88,7 @@
 
 <div style="width: 50%; text-align: left; float: left;"><b>$pejabat, </b></div><br><br>
 <div style="width: 50%; text-align: left; float: left;"><b>{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
-<div style="width: 50%; text-align: left; float: left;">$nametdd</b></div><br>
+<div style="width: 50%; text-align: left; float: left;">{{ $ttd }}</b></div><br>
 <div style="width: 50%; text-align: left; float: left;"><b>{{ $nim }}</b></div><br>
 </div>
 

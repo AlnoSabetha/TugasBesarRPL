@@ -70,7 +70,7 @@
                                     <a class="nav-link" href="layout-sidenav-light.html">Surat Berita Acara</a>
                                     <a class="nav-link" href="layout-sidenav-light.html">Surat Keputusan</a>
                                     <a class="nav-link" href="layout-sidenav-light.html">Surat Permohonan</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Surat Berita Acara</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Surat Personalia</a>
                                 </nav>
                             </div>
                         </div>

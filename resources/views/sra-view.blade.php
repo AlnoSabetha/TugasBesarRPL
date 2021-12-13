@@ -1,20 +1,20 @@
-@extends('layouts.app-mahasiswa')
+@extends('layouts.app')
 
-@section('content-mhs')
+@section('content')
 
     <div class="">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
 
-                    <form method="post" action="/surat/updated/{{ $srt->id }}">
+                    <form method="post" action="/surat/admin/setuju/{{$srt->id}}">
                     @csrf               <!-- {{ csrf_field() }} -->
                     @method('PUT')      <!-- {{ method_field('PUT') }} -->
                     <div class="row d-flex justify-content-center mt-5">
                     <div class="col-md-3">
                             <main class="form-signin">
                                 <form>
-                                    <h1 class="h1 mb-3 fw-normal d-flex justify-content-center">Detail Surat</h1>
+                                    <h1 class="h1 mb-3 fw-normal d-flex justify-content-center">Detail Surat Tugas</h1>
 
                                     <div class="form-floating mb-2">
                                     <input type="text" class="form-control btn-black" readonly name="tujuan_surat" id="floatingInput" value="{{ $srt->tujuan_surat }}">
@@ -41,25 +41,14 @@
                                     <label for="floatingInput">Alamat Mitra</label>
                                     </div>
 
-                                    <div class="fluid">
-                                        <div class="btn-group">
-                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            yang Bertandatangan
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Ir. Henry Feriadi, M.Sc., Ph.D.</a>
-                                            <a class="dropdown-item" href="#">Restyandito, S.Kom, MSIS., Ph.D</a>
-                                            <a class="dropdown-item" href="#">Drs. Jong Jek Siang, M.Sc.</a>
-                                            <a class="dropdown-item" href="#">Drs. Wimmie Handiwidjojo, MIT.</a>
-                                            <a class="dropdown-item" href="#">Katon Wijana, S.Kom, M.T.</a>
-                                            <a class="dropdown-item" href="#">Yetli Oslan, S.Kom, M.T.</a>
-                                        </div>
-                                        </div>
-                                    <a href="/surat/admin/setuju/{{$srt->id}}" class="btn btn-success"><img src="/img/konfirm.png" alt="disetujui" height="20" width="20"></a>
-                                    <a href="/surat/admin/tolak/{{$srt->id}}" class="btn btn-danger"><img src="/img/rejected.png" alt="disetujui" height="20" width="20"></a></td>
-                                    </div>
-
-                                    </div>
+                                    <select class="form-select mb-3" name="ttd" id="ttd" aria-label="Default select example">
+                                    <option selected>yang Bertandatangan</option>
+                                    <option value="Ir. Henry Feriadi, M.Sc., Ph.D.">Ir. Henry Feriadi, M.Sc., Ph.D.</option>
+                                    <option value="Restyandito, S.Kom, MSIS., Ph.D">Restyandito, S.Kom, MSIS., Ph.D</option>
+                                    <option value="Drs. Jong Jek Siang, M.Sc.">Drs. Jong Jek Siang, M.Sc.</option>
+                                    </select>
+                                     <button class="btn btn-lg btn-primary btn-success text-dark" type="submit" value="Simpan"><img src="/img/konfirm.png" alt="disetujui" height="20" width="20"></button>
+                                    <a href="/surat/admin/tolak/{{$srt->id}}" class="btn btn-danger"><img src="/img/rejected.png" alt="ditolak" height="34" width="25"></a>
                                 </div>
                                 </form>
 

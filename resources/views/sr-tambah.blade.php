@@ -14,7 +14,7 @@
                             <div class="col-md-5">
                                     <main class="form-signin">
                                         <form>
-                                            <h1 class="h1 mb-3 fw-normal d-flex justify-content-center">Buat Surat</h1>
+                                            <h1 class="h1 mb-3 fw-normal d-flex justify-content-center">Buat Surat Tugas</h1>
 
                                             <div class="form-floating mb-2">
                                             <input type="text" class="form-control btn-black" name="tujuan_surat" id="floatingInput">
