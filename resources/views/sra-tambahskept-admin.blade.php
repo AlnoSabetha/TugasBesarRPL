@@ -8,7 +8,7 @@
                 <div class="card" style="width: 95rem;">
 
                     <div class="card-body">
-                        <form action="/surat/simpan" method="POST">
+                        <form action="/surat/admin/simpanskept" method="POST">
                             @csrf
                             <div class="row d-flex justify-content-center mt-5">
                             <div class="col-md-5">
@@ -22,7 +22,7 @@
                                             </div>
 
                                             <div class="form-floating mb-2">
-                                            <input type="textarea" class="form-control btn-black" name="membimbing" id="floatingInput">
+                                            <input type="textarea" class="form-control btn-black" name="menimbang" id="floatingInput">
                                             <label for="floatingInput">Membimbing</label>
                                             </div>
 
@@ -46,15 +46,12 @@
                                             <label for="floatingInput">Tanggal</label>
                                             </div>
 
-                                            <div class="form-floating mb-3">
-                                            <input type="text" class="form-control btn-black" name=" nameygtdd " id="floatingInput">
-                                            <label for="floatingInput">Nama Penandatanganan</label>
-                                            </div>
-
-                                            <div class="form-floating mb-3">
-                                            <input type="text" class="form-control btn-black" name=" nik " id="floatingInput">
-                                            <label for="floatingInput">Nik</label>
-                                            </div>
+                                            <select class="form-select mb-3" name="ttd" id="ttd" aria-label="Default select example">
+                                            <option selected>yang Bertandatangan</option>
+                                            <option value="Ir. Henry Feriadi, M.Sc., Ph.D.">Ir. Henry Feriadi, M.Sc., Ph.D.</option>
+                                            <option value="Restyandito, S.Kom, MSIS., Ph.D">Restyandito, S.Kom, MSIS., Ph.D</option>
+                                            <option value="Drs. Jong Jek Siang, M.Sc.">Drs. Jong Jek Siang, M.Sc.</option>
+                                            </select>
 
 
                                             <button class="w-100 btn btn-lg btn-primary btn-success text-dark" type="submit" value="Simpan">Kirim</button>

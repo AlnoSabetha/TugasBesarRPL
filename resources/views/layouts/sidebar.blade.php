@@ -66,11 +66,12 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="/surattugas/admin/tambah">Surat Tugas</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Surat Keterangan</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Surat Berita Acara</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Surat Keputusan</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Surat Permohonan</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Surat Personalia</a>
+                                    <a class="nav-link" href="/surat/admin/tambahket">Surat Keterangan</a>
+                                    <a class="nav-link" href="/surat/admin/tambahba">Surat Berita Acara</a>
+                                    <a class="nav-link" href="/surat/admin/tambahskept">Surat Keputusan</a>
+                                    <a class="nav-link" href="/surat/admin/tambahsper">Surat Permohonan</a>
+                                    <a class="nav-link" href="/surat/admin/tambahpers">Surat Personalia</a>
+                                    <a class="nav-link" href="/surat/admin/tambahda">Surat Daftar Hadir</a>
                                 </nav>
                             </div>
                         </div>

@@ -41,14 +41,18 @@
                                     <label for="floatingInput">Alamat Mitra</label>
                                     </div>
 
+                                    @if($srt->nama != 'admin')
                                     <select class="form-select mb-3" name="ttd" id="ttd" aria-label="Default select example">
                                     <option selected>yang Bertandatangan</option>
                                     <option value="Ir. Henry Feriadi, M.Sc., Ph.D.">Ir. Henry Feriadi, M.Sc., Ph.D.</option>
                                     <option value="Restyandito, S.Kom, MSIS., Ph.D">Restyandito, S.Kom, MSIS., Ph.D</option>
                                     <option value="Drs. Jong Jek Siang, M.Sc.">Drs. Jong Jek Siang, M.Sc.</option>
-                                    </select>
+                                    </select>@endif
+                                    @if($srt->nama != 'admin')
                                      <button class="btn btn-lg btn-primary btn-success text-dark" type="submit" value="Simpan"><img src="/img/konfirm.png" alt="disetujui" height="20" width="20"></button>
                                     <a href="/surat/admin/tolak/{{$srt->id}}" class="btn btn-danger"><img src="/img/rejected.png" alt="ditolak" height="34" width="25"></a>
+                                    @elseif($srt->nama == 'admin')
+                                    <a href="/surat/admin/template/{{$srt->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="34" height="25"></a>@endif
                                 </div>
                                 </form>
 

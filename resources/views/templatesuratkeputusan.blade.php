@@ -63,7 +63,7 @@
 			<tr>
 		       <td>
                <p>Dekan Fakultas Teknologi Informasi Universitas Kristen Duta Wacana</p>
-               <p>Memimbing : {{ $membimbimbing }} </p>
+               <p>Memimbing : {{ $membimbing }} </p>
                <p>Memimbing : {{ $mengingat }} </p>
 
                     <center>
@@ -77,8 +77,8 @@
 					<font size="2">Pada tanggal: {{ $tanggal }}</font><br><br>
 					<p>{{ $pejabat }}</p><br><br>
 					<p>{!! QrCode::generate('BELAJAR QR'); !!}</p><br><br><br><br><br><br><br>
-					<p>{{ $ttd }}</p>
-                    <p>{{ $nik }}</p>
+					<p>$ttd</p>
+                    <p>$nik</p>
                 	</center>
 
 
