@@ -14,17 +14,16 @@
                             <div class="col-md-5">
                                     <main class="form-signin">
                                         <form>
-                                            <h1 class="h1 mb-3 fw-normal d-flex justify-content-center">Buat Surat</h1>
+                                            <h1 class="h1 mb-3 fw-normal d-flex justify-content-center">Buat Surat Personalia</h1>
 
                                             <div class="form-floating mb-2">
-                                            <input type="text" class="form-control btn-black" name="kepada" id="floatingInput">
-                                            <label for="floatingInput">Kepada</label>
+                                            <input type="text" class="form-control btn-black" name="tujuan" id="floatingInput">
+                                            <label for="floatingInput">Tujuan</label>
                                             </div>
-                                            
 
                                             <div class="form-floating mb-2">
-                                            <input type="text" class="form-control btn-black" name="tujuan_surat" id="floatingInput">
-                                            <label for="floatingInput">Tujuan Surat</label>
+                                            <input type="text" class="form-control btn-black" name="keperluan" id="floatingInput">
+                                            <label for="floatingInput">Keperluan</label>
                                             </div>
                                             
                                             <div class="form-floating mb-2">
@@ -38,26 +37,14 @@
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                            <input type="text" class="form-control btn-black" name="keterangan" id="floatingInput">
-                                            <label for="floatingInput">Keterangan</label>
+                                            <input type="text" class="form-control btn-black" name="keperluan" id="floatingInput">
+                                            <label for="floatingInput">Keperluan</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                            <input type="text" class="form-control btn-black" name="waktu" id="floatingInput">
-                                            <label for="floatingInput">Waktu</label>
+                                            <input type="date" class="form-control btn-black" name="tanggal" id="floatingInput">
+                                            <label for="floatingInput">Tanggal</label>
                                             </div>
-
-                                            <div class="form-floating mb-3">
-                                            <input type="date" class="form-control btn-black" name="tanggal_pelaksanaan" id="floatingInput">
-                                            <label for="floatingInput">Tanggal Pelaksanaan</label>
-                                            </div>
-
-                                            <div class="form-floating mb-3">
-                                            <input type="text" class="form-control btn-black" name="tempat" id="floatingInput">
-                                            <label for="floatingInput">Tempat</label>
-                                            </div>
-
-                                            
 
                                             <button class="w-100 btn btn-lg btn-primary btn-success text-dark" type="submit" value="Simpan">Kirim</button>
                             </div>
