@@ -55,7 +55,7 @@
 		<table width="625">
 			<tr>
 		       <td>
-    
+
 <table>
     <tr>
         <td style="width: 30%;">Nama Kegiatan :</td>
@@ -65,7 +65,7 @@
 	<tr>
         <td style="width: 30%;">Hari, Tanggal :</td>
         <td style="width: 5%;">:</td>
-        <td style="width: 65%;">{{ $tanggal }}</td>
+        <td style="width: 65%;">{{ $tanggal_pelaksanaan }}</td>
     </tr>
 	<tr>
         <td style="width: 30%;">Waktu :</td>
@@ -85,16 +85,16 @@
 </table>
 <br>
 <center>
-	
+
 <table border="2">
-	
+
 <th bgcolor="grey" rowspan="2">No</th>
 <th bgcolor="grey" rowspan="2">NIM</th>
 <th bgcolor="grey" rowspan="2">Nama Lengkap</th>
 <th bgcolor="grey" colspan="3">Tanda Tangan</th>
 
         <tr>
-           
+
         </tr>
         <tr>
             <td>1</td>
@@ -119,7 +119,7 @@
 <div style="width: 50%; text-align: left; float: right;">Waktu dan tempat menandatangani</div><br>
 <div style="width: 50%; text-align: left; float: right;">Yang bertanda tangan,</div><br><br>
 <div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
-<div style="width: 50%; text-align: left; float: right;">{{ $name }}</div>
+<div style="width: 50%; text-align: left; float: right;">{{ $ttd }}</div>
 
 </div>
 

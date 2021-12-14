@@ -17,24 +17,30 @@
                                     <h1 class="h1 mb-3 fw-normal d-flex justify-content-center">Detail Surat Keterangan</h1>
 
                                     <div class="form-floating mb-2">
-                                            <input type="text" class="form-control btn-black" name="jabatan" id="floatingInput" value="{{ $srt->jabatan }}" readonly>
-                                            <label for="floatingInput">Jabatan</label>
+                                            <input type="text" class="form-control btn-black" name="tujuan" id="floatingInput" value="{{$srt->tujuan}}" readonly>
+                                            <label for="floatingInput">Tujuan</label>
                                             </div>
 
                                             <div class="form-floating mb-2">
-                                            <input type="text" class="form-control btn-black" name="periode" id="floatingInput" value="{{ $srt->periode }}" readonly>
-                                            <label for="floatingInput">Periode</label>
+                                            <input type="text" class="form-control btn-black" name="kepada" id="floatingInput" value="{{$srt->kepada}}" readonly>
+                                            <label for="floatingInput">Kepada</label>
                                             </div>
 
                                             <div class="form-floating mb-2">
-                                            <input type="text" class="form-control btn-black" name="kota" id="floatingInput" value="{{ $srt->kota }}" readonly>
-                                            <label for="floatingInput">Kota</label>
+                                            <input type="text" class="form-control btn-black" name="nama_mitra" id="floatingInput" value="{{$srt->nama_mitra}}" readonly>
+                                            <label for="floatingInput">Nama Mitra</label>
                                             </div>
 
-                                            <div class="form-floating mb-2">
-                                            <input type="date" class="form-control btn-black" name="tanggal" id="floatingInput" value="{{ $srt->tanggal }}" readonly>
+                                            <div class="form-floating mb-3">
+                                            <input type="text" class="form-control btn-black" name="keperluan" id="floatingInput" value="{{$srt->keperluan}}" readonly>
+                                            <label for="floatingInput">Keperluan</label>
+                                            </div>
+
+                                            <div class="form-floating mb-3">
+                                            <input type="date" class="form-control btn-black" name="tanggal" id="floatingInput" value="{{$srt->tanggal}}" readonly>
                                             <label for="floatingInput">Tanggal</label>
                                             </div>
+
 
                                             @if($srt->nama != 'admin')
                                             <select class="form-select mb-3" name="ttd" id="ttd" aria-label="Default select example">
@@ -47,7 +53,7 @@
                                             <button class="btn btn-lg btn-primary btn-success text-dark" type="submit" value="Simpan"><img src="/img/konfirm.png" alt="disetujui" height="20" width="20"></button>
                                             <a href="/suratket/admin/tolak/{{$srt->id}}" class="btn btn-danger"><img src="/img/rejected.png" alt="ditolak" height="34" width="25"></a>
                                             @elseif($srt->nama == 'admin')
-                                            <a href="/surat/admin/templateket/{{$srt->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="34" height="25"></a>@endif
+                                            <a href="/surat/admin/templatepers/{{$srt->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="34" height="25"></a>@endif
 
                                     </div>
                                 </div>

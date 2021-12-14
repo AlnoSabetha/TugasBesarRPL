@@ -8,7 +8,7 @@
                 <div class="card" style="width: 95rem;">
 
                     <div class="card-body">
-                        <form action="surat/admin/simpanda" method="POST">
+                        <form action="/surat/admin/simpanda" method="POST">
                             @csrf
                             <div class="row d-flex justify-content-center mt-5">
                             <div class="col-md-5">
@@ -23,7 +23,7 @@
 
 
                                             <div class="form-floating mb-2">
-                                            <input type="date" class="form-control btn-black" name="tanggal" id="floatingInput">
+                                            <input type="date" class="form-control btn-black" name="tanggal_pelaksanaan" id="floatingInput">
                                             <label for="floatingInput">Tanggal</label>
                                             </div>
 
@@ -41,6 +41,13 @@
                                             <input type="text" class="form-control btn-black" name="pembicara" id="floatingInput">
                                             <label for="floatingInput">Pembicara</label>
                                             </div>
+
+                                            <select class="form-select mb-3" name="ttd" id="ttd" aria-label="Default select example">
+                                            <option selected>yang Bertandatangan</option>
+                                            <option value="Ir. Henry Feriadi, M.Sc., Ph.D.">Ir. Henry Feriadi, M.Sc., Ph.D.</option>
+                                            <option value="Restyandito, S.Kom, MSIS., Ph.D">Restyandito, S.Kom, MSIS., Ph.D</option>
+                                            <option value="Drs. Jong Jek Siang, M.Sc.">Drs. Jong Jek Siang, M.Sc.</option>
+                                            </select>
 
 
                                             <button class="w-100 btn btn-lg btn-primary btn-success text-dark" type="submit" value="Simpan">Kirim</button>

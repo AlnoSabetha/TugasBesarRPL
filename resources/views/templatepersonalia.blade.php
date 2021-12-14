@@ -59,7 +59,7 @@
 
 
             <font size="2">Nomor: {{ $nosur }}</font><br>
-            <font size="2">Hal: {{ $hal }}</font><br>
+            <font size="2">Hal: $hal</font><br>
             <font size="2">Lamp: 1 lembar</font><br><br><br>
             <font size="2"><b>Kepada Yth :<b></font><br>
             <font size="2"><b>{{ $kepada }}<b></font><br>
@@ -67,15 +67,15 @@
             <font size="2"><b>Yogyakarta<b></font><br>
 
                <p>Salam sejahtera, <br> Menyusuli surat kami {{ $nosur }}, perihal Permohonan SK Dosen Kontrak dan <br>
-               NUP atas nama {{ $name }}. Melalui surat ini kami menyampaikan <b> {{ $tujuan }} </b> {{ $keperluan }}</p>
+               NUP atas nama {{ $nama }}. Melalui surat ini kami menyampaikan <b> {{ $tujuan }} </b> {{ $keperluan }}</p>
 
 <p>Demikian surat ini kami sampaikan. Atau perhatian dan kerjasama yang diberikan kami <br> mengucapkan terima kasih.
 </p><br>
 
-<div style="width: 50%; text-align: left; float: left;">{{ $pejabat }}, </div><br><br>
+<div style="width: 50%; text-align: left; float: left;">$pejabat, </div><br><br>
 <div style="width: 50%; text-align: left; float: left;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
 <div style="width: 50%; text-align: left; float: left;">{{ $ttd }}</div><br>
-<div style="width: 50%; text-align: left; float: left;">{{ $nik }}</div><br>
+<div style="width: 50%; text-align: left; float: left;">$nik</div><br>
 </div>
 
 <script>

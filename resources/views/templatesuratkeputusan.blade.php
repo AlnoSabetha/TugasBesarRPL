@@ -48,7 +48,7 @@
 					<font size="2"><b>SURAT KEPUTUSAN DEKAN</b></font><br>
                     <font size="2"><b>FAKULTAS TEKNOLOGI INFORMASI</b></font><br>
                     <font size="2">UNIVERSITAS KRISTEN DUTA WACANA</font><br>
-					<font size="2">NOMOR: </font><br><br>
+					<font size="2">NOMOR: {{ $nosur }}</font><br><br>
                     <font size="2">Tentang </font><br>
 
                     <font size="2">{{ $tujuan }}</font><br>

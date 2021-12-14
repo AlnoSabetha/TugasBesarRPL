@@ -17,12 +17,13 @@ class CreateSuratPersonalia extends Migration
             $table->id();
             $table->string('tujuan');
             $table->string('nama');
+            $table->string('nama_mitra');
             $table->integer('nik');
             $table->string('kepada');
             $table->string('keperluan');
             $table->date('tanggal');
             $table->string('pejabat');
-            $table->string('namattd');
+            $table->string('ttd');
             $table->string('jenis_surat');
             $table->string('status');
             $table->string('no_surat');

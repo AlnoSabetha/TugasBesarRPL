@@ -31,7 +31,8 @@ class AdminController extends Controller
             'keterangan' => $request->keterangan,
             'nim' => $nim,
             'ttd' => $request->ttd,
-            'nama' => $nama
+            'nama' => $nama,
+            'status' => 'disetujui'
         ]);
         return redirect('/surat/admin');
     }
@@ -47,6 +48,7 @@ class AdminController extends Controller
         'nim' => $srt->nim,
         'nama' => $nama,
         'ttd' => $srt->ttd,
+        'nosur' => $srt->id . '/D/FTI/2021',
         'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
@@ -98,6 +100,7 @@ class AdminController extends Controller
             'kota' => $request->kota,
             'tanggal' => $request->tanggal,
             'nim' => $nim,
+            'status' => 'disetujui',
             'ttd' => $request->ttd,
             'nama' => $nama
         ]);
@@ -116,6 +119,7 @@ class AdminController extends Controller
         'nim' => $srt->nim,
         'nama' => $nama,
         'ttd' => $srt->ttd,
+        'nosur' => $srt->id . '/B/FTI/2021',
         'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
@@ -170,6 +174,7 @@ class AdminController extends Controller
             'nama_p_mitra' => $request->nama_p_mitra,
             'tanggal' => $request->tanggal,
             'nim' => $nim,
+            'status' => 'disetujui',
             'ttd' => $request->ttd,
             'nama' => $nama
         ]);
@@ -191,6 +196,7 @@ class AdminController extends Controller
         'nim' => $srt->nim,
         'nama' => $nama,
         'ttd' => $srt->ttd,
+        'nosur' => $srt->id . '/E/FTI/2021',
         'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
@@ -246,6 +252,7 @@ class AdminController extends Controller
             'tujuan' => $request->tujuan,
             'nama_kegiatan' => $request->nama_kegiatan,
             'nim' => $nim,
+            'status' => 'disetujui',
             'ttd' => $request->ttd,
             'nama' => $nama
         ]);
@@ -268,6 +275,7 @@ class AdminController extends Controller
         'nim' => $srt->nim,
         'nama' => $nama,
         'ttd' => $srt->ttd,
+        'nosur' => $srt->id . '/F/FTI/2021',
         'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
@@ -321,13 +329,14 @@ class AdminController extends Controller
         $nama = Auth::user()->name;
         SuratSkept::create([
             'tujuan' => $request->tujuan,
-            'membimbing' => $request->membimbing,
+            'menimbang' => $request->menimbang,
             'mengingat' => $request->mengingat,
             'menetapkan' => $request->menetapkan,
             'kota' => $request->kota,
             'tanggal' => $request->tanggal,
             'ttd' => $request->ttd,
             'nim' => $nim,
+            'status' => 'disetujui',
             'nama' => $nama
         ]);
         return redirect('/suratskept/admin');
@@ -344,12 +353,113 @@ class AdminController extends Controller
         $srt = SuratSkept::find($id);
         return view ('templatesuratkeputusan', [
             'tujuan' => $srt->tujuan,
-            'membimbimbing' => $srt->menimbang,
+            'membimbing' => $srt->menimbang,
             'mengingat' => $srt->mengingat,
             'menetapkan' => $srt->menetapkan,
             'kota' => $srt->kota,
             'tanggal' => $srt->tanggal,
+            'nosur' => $srt->id . '/B.02/FTI/2021',
             'pejabat' => $srt->ttd
+        ]);
+    }
+
+    //surat Personalia
+    public function daftarPers()
+    {
+        $srt = SuratPers::all();
+        return view ('sra-suratpers-admin', ['srt' => $srt]);
+    }
+
+    public function tambahPers()
+    {
+        return view ('sra-tambahpers-admin');
+    }
+
+    public function simpanPers(Request $request)
+    {
+        $nama = Auth::user()->name;
+        $nim = Auth::user()->nim;
+        SuratPers::create([
+            'tujuan' =>$request->tujuan,
+            'nama' => $nama,
+            'nim' => $nim,
+            'nama_mitra' => $request->nama_mitra,
+            'kepada' => $request->kepada,
+            'keperluan' => $request->keperluan,
+            'tanggal' => $request->tanggal,
+            'ttd' => $request->ttd,
+            'status' => 'disetujui'
+        ]);
+        return redirect ('/suratpers/admin');
+    }
+
+    public function viewPers($id)
+    {
+        $srt = SuratPers::find($id);
+        return view ('sra-viewpers-admin', ['srt' => $srt]);
+    }
+
+    public function templatePers($id)
+    {
+        $nama = Auth::user()->name;
+        $srt = SuratPers::find($id);
+        return view ('templatepersonalia', [
+            'tanggal' => $srt->tanggal,
+            'kepada' => $srt->kepada,
+            'nosur' => $srt->id . '/A/FTI/2021',
+            'nama' => $nama,
+            'tujuan' => $srt->tujuan,
+            'keperluan' => $srt->keperluan,
+            'ttd' => $srt->ttd
+        ]);
+    }
+
+    //daftar hadir
+    public function daftarDa()
+    {
+        $srt = SuratDa::all();
+        return view ('sra-daftarhadir-admin', ['srt' => $srt]);
+    }
+
+    public  function tambahDa()
+    {
+        return view('sra-tambahda-admin');
+    }
+
+    public function simpanDa(Request $request)
+    {
+        $nama = Auth::user()->name;
+        $nim = Auth::user()->nim;
+        SuratDa::create([
+            'nama_kegiatan' => $request->nama_kegiatan,
+            'tanggal_pelaksanaan' => $request->tanggal_pelaksanaan,
+            'waktu' => $request->waktu,
+            'tempat' => $request->tempat,
+            'pembicara' => $request->pembicara,
+            'ttd' => $request->ttd,
+            'status' => 'disetujui',
+            'nama' => $nama,
+            'nim' => $nim
+        ]);
+        return redirect('/suratda/admin');
+    }
+
+    public function viewDa($id)
+    {
+        $srt = SuratDa::find($id);
+        return view ('sra-viewda-admin', ['srt' => $srt]);
+    }
+
+    public function templateDa($id)
+    {
+        $srt = SuratDa::find($id);
+        return view ('templatedaftarhadir', [
+            'nama_kegiatan' => $srt->nama_kegiatan,
+            'tanggal_pelaksanaan' => $srt->tanggal_pelaksanaan,
+            'waktu' => $srt->waktu,
+            'tempat' => $srt->tempat,
+            'pembicara' => $srt->pembicara,
+            'ttd' => $srt->ttd
         ]);
     }
 
