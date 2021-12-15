@@ -82,6 +82,12 @@ class SuratKetController extends Controller
         'nosur' => $srt->no_surat]);
     }
 
+    public function view($id)
+    {
+        $srt = SuratKet::find($id);
+        return view ('sr-viewket-mhs', ['srt' => $srt]);
+    }
+
         //Barcode
     public function index()
     {

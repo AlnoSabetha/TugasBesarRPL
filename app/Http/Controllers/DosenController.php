@@ -39,6 +39,12 @@ class DosenController extends Controller
         return redirect('/surattgs/dosen');
     }
 
+    public function hapusTugas($id)
+    {
+        $srt = surat::find($id)->delete();
+        return redirect ('/surattgs/dosen');
+    }
+
     public function editTugas($id)
     {
         $srt = surat::find($id);
@@ -71,6 +77,12 @@ class DosenController extends Controller
         'nosur' => $srt->no_surat]);
     }
 
+    public function viewTugas($id)
+    {
+        $srt = surat::find($id);
+        return view ('srd-viewtgs-dosen', ['srt' => $srt]);
+    }
+
     //surat keterangan dosen
     public function daftarKeterangan()
     {
@@ -97,6 +109,12 @@ class DosenController extends Controller
             'nama' => $nama
         ]);
         return redirect('/suratket/dosen');
+    }
+
+    public function hapusKeterangan($id)
+    {
+        $srt = SuratKet::find($id)->delete();
+        return redirect ('/suratket/dosen');
     }
 
     public function editKeterangan($id)
@@ -132,6 +150,12 @@ class DosenController extends Controller
         'nosur' => $srt->no_surat]);
     }
 
+    public function viewKeterangan($id)
+    {
+        $srt = surat::find($id);
+        return view ('srd-viewket-dosen', ['srt' => $srt]);
+    }
+
     //surat berita acara dosen
     public function daftarBeritaAcara()
     {
@@ -161,6 +185,12 @@ class DosenController extends Controller
             'nama' => $nama
         ]);
         return redirect('/suratba/dosen');
+    }
+
+    public function hapusBeritaAcara($id)
+    {
+        $srt = SuratBA::find($id)->delete();
+        return redirect ('/suratba/dosen');
     }
 
     public function editBeritaAcara($id)
@@ -202,6 +232,12 @@ class DosenController extends Controller
         'nosur' => $srt->no_surat]);
     }
 
+    public function viewBeritaAcara($id)
+    {
+        $srt = surat::find($id);
+        return view ('srd-viewba-dosen', ['srt' => $srt]);
+    }
+
     //surat permohonan dosen
     public function daftarPermohonan()
     {
@@ -232,6 +268,12 @@ class DosenController extends Controller
             'nama' => $nama
         ]);
         return redirect('/suratsper/dosen');
+    }
+
+    public function hapusPermohonan($id)
+    {
+        $srt = SuratSper::find($id)->delete();
+        return redirect ('/suratsper/dosen');
     }
 
     public function editPermohonan($id)
@@ -273,5 +315,11 @@ class DosenController extends Controller
         'ttd' => $srt->ttd,
         'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
+    }
+
+    public function viewPermohonan($id)
+    {
+        $srt = surat::find($id);
+        return view ('srd-viewsper-dosen', ['srt' => $srt]);
     }
 }

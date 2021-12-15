@@ -1,13 +1,13 @@
-@extends('layouts.app')
+@extends('layouts.app-dosen')
 
-@section('content')
+@section('content-dosen')
 
     <div class="">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
 
-                    <form method="post" action="/suratba/admin/setuju/{{$srt->id}}">
+                    <form method="post" action="">
                     @csrf               <!-- {{ csrf_field() }} -->
                     @method('PUT')      <!-- {{ method_field('PUT') }} -->
                     <div class="row d-flex justify-content-center mt-5">
@@ -50,20 +50,7 @@
                                             <input type="date" class="form-control btn-black" name="tanggal" id="floatingInput" value="{{ $srt->tanggal }}" readonly>
                                             <label for="floatingInput">Tanggal</label>
                                             </div>
-
-                                             @if($srt->nama != 'admin')
-                                            <select class="form-select mb-3" name="ttd" id="ttd" aria-label="Default select example">
-                                            <option selected>yang Bertandatangan</option>
-                                            <option value="Ir. Henry Feriadi, M.Sc., Ph.D.">Ir. Henry Feriadi, M.Sc., Ph.D.</option>
-                                            <option value="Restyandito, S.Kom, MSIS., Ph.D">Restyandito, S.Kom, MSIS., Ph.D</option>
-                                            <option value="Drs. Jong Jek Siang, M.Sc.">Drs. Jong Jek Siang, M.Sc.</option>
-                                            </select>@endif
-                                            @if($srt->nama != 'admin')
-                                            <button class="btn btn-lg btn-primary btn-success text-dark" type="submit" value="Simpan"><img src="/img/konfirm.png" alt="disetujui" height="20" width="20"></button>
-                                            <a href="/suratba/admin/tolak/{{$srt->id}}" class="btn btn-danger"><img src="/img/rejected.png" alt="ditolak" height="34" width="25"></a>
-                                            @elseif($srt->nama == 'admin')
-                                            <a href="/surat/admin/templateba/{{$srt->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="34" height="25"></a>@endif
-
+\
                                 </div>
                                 </form>
 

@@ -20,7 +20,7 @@
                                             <div class="row">
                                                 <div class="col-xl-3 col-md-6">
                                                     <div class="card bg-primary text-white mb-4">
-                                                        <div class="card-body">Surat Tugas</div>
+                                                        <div class="card-body">Surat Tugas <br>Jumlah Surat : {{ $counttgs }}</div>
                                                         <div class="card-footer d-flex align-items-center justify-content-between">
                                                             <a class="small text-white stretched-link" href="/surattgs/dosen">View Details</a>
                                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -29,7 +29,7 @@
                                                 </div>
                                                 <div class="col-xl-3 col-md-6">
                                                     <div class="card bg-warning text-white mb-4">
-                                                        <div class="card-body">Surat Keterangan</div>
+                                                        <div class="card-body">Surat Keterangan <br>Jumlah Surat : {{ $countket }}</div>
                                                         <div class="card-footer d-flex align-items-center justify-content-between">
                                                             <a class="small text-white stretched-link" href="/suratket/dosen">View Details</a>
                                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -38,7 +38,7 @@
                                                 </div>
                                                 <div class="col-xl-3 col-md-6">
                                                     <div class="card bg-success text-white mb-4">
-                                                        <div class="card-body">Surat Berita Acara</div>
+                                                        <div class="card-body">Surat Berita Acara <br>Jumlah Surat : {{ $countba }}</div>
                                                         <div class="card-footer d-flex align-items-center justify-content-between">
                                                             <a class="small text-white stretched-link" href="/suratba/dosen">View Details</a>
                                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -47,7 +47,7 @@
                                                 </div>
                                                 <div class="col-xl-3 col-md-6">
                                                     <div class="card bg-danger text-white mb-4">
-                                                        <div class="card-body">Surat Permohonan</div>
+                                                        <div class="card-body">Surat Permohonan <br>Jumlah Surat : {{ $countsper }}</div>
                                                         <div class="card-footer d-flex align-items-center justify-content-between">
                                                             <a class="small text-white stretched-link" href="/suratsper/dosen">View Details</a>
                                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>

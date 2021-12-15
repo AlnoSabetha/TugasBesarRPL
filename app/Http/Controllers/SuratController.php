@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\surat;
+use App\SuratKet;
 use Illuminate\Support\Facades\Auth;
 
 class SuratController extends Controller
@@ -20,7 +21,9 @@ class SuratController extends Controller
     {
         $nim = Auth::user()->nim;
         $srt = surat::where('nim', '=', $nim)->get();
-        return view ('mahasiswa', ['srt' => $srt]);
+        return view ('mahasiswa', ['srt' => $srt,
+         'count' => surat::where('nim', '=', $nim)->count(),
+        'count2' => SuratKet::where('nim', '=', $nim)->count()]);
     }
 
     public function tambah()
@@ -79,6 +82,12 @@ class SuratController extends Controller
         'ttd' => $srt->ttd,
         'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
+    }
+
+    public function view($id)
+    {
+        $srt = surat::find($id);
+        return view ('sr-viewtgs-mhs', ['srt' => $srt]);
     }
 
         //Barcode

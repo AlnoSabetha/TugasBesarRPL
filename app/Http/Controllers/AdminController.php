@@ -41,6 +41,7 @@ class AdminController extends Controller
     {
         $nama = Auth::user()->name;
         $srt = surat::find($id);
+        $srt->no_surat = $srt->id . '/D/FTI/2021';
         return view('template', ['name' => $srt->nama_mitra,
         'tujuan' => $srt->tujuan_surat,
         'alamat' => $srt->alamat_mitra,
@@ -48,7 +49,7 @@ class AdminController extends Controller
         'nim' => $srt->nim,
         'nama' => $nama,
         'ttd' => $srt->ttd,
-        'nosur' => $srt->id . '/D/FTI/2021',
+        'nosur' => $srt->no_surat,
         'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
@@ -111,6 +112,7 @@ class AdminController extends Controller
     {
         $nama = Auth::user()->name;
         $srt = SuratKet::find($id);
+        $srt->no_surat = $srt->id . '/B/FTI/2021';
         return view('templateketerangan', [
         'jabatan' => $srt->jabatan,
         'tahun' => $srt->periode,
@@ -119,7 +121,7 @@ class AdminController extends Controller
         'nim' => $srt->nim,
         'nama' => $nama,
         'ttd' => $srt->ttd,
-        'nosur' => $srt->id . '/B/FTI/2021',
+        'nosur' => $srt->no_surat,
         'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
@@ -185,6 +187,7 @@ class AdminController extends Controller
     {
         $nama = Auth::user()->name;
         $srt = SuratBA::find($id);
+        $srt->no_surat = $srt->id . '/E/FTI/2021';
         return view('templateberitaacara', ['name' => $srt->nama_mitra,
         'tujuan' => $srt->tujuan,
         'nama_acara' => $srt->nama_acara,
@@ -196,7 +199,7 @@ class AdminController extends Controller
         'nim' => $srt->nim,
         'nama' => $nama,
         'ttd' => $srt->ttd,
-        'nosur' => $srt->id . '/E/FTI/2021',
+        'nosur' => $srt->no_surat,
         'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
@@ -263,6 +266,7 @@ class AdminController extends Controller
     {
         $nama = Auth::user()->name;
         $srt = SuratSper::find($id);
+        $srt->no_surat = $srt->id . '/F/FTI/2021';
         return view('templatepermohonan', ['name' => $nama,
         'tgl_pembuatan' => $srt->tgl_pembuatan,
         'nama_mitra' => $srt->kepada,
@@ -275,7 +279,7 @@ class AdminController extends Controller
         'nim' => $srt->nim,
         'nama' => $nama,
         'ttd' => $srt->ttd,
-        'nosur' => $srt->id . '/F/FTI/2021',
+        'nosur' => $srt->no_surat,
         'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
@@ -351,6 +355,7 @@ class AdminController extends Controller
     public function templateSkept($id)
     {
         $srt = SuratSkept::find($id);
+        $srt->no_surat = $srt->id . '/B.02/FTI/2021';
         return view ('templatesuratkeputusan', [
             'tujuan' => $srt->tujuan,
             'membimbing' => $srt->menimbang,
@@ -358,7 +363,7 @@ class AdminController extends Controller
             'menetapkan' => $srt->menetapkan,
             'kota' => $srt->kota,
             'tanggal' => $srt->tanggal,
-            'nosur' => $srt->id . '/B.02/FTI/2021',
+            'nosur' => $srt->no_surat,
             'pejabat' => $srt->ttd
         ]);
     }
@@ -403,10 +408,11 @@ class AdminController extends Controller
     {
         $nama = Auth::user()->name;
         $srt = SuratPers::find($id);
+        $srt->no_surat = $srt->id . '/A/FTI/2021';
         return view ('templatepersonalia', [
             'tanggal' => $srt->tanggal,
             'kepada' => $srt->kepada,
-            'nosur' => $srt->id . '/A/FTI/2021',
+            'nosur' => $srt->no_surat,
             'nama' => $nama,
             'tujuan' => $srt->tujuan,
             'keperluan' => $srt->keperluan,
@@ -453,13 +459,15 @@ class AdminController extends Controller
     public function templateDa($id)
     {
         $srt = SuratDa::find($id);
+        $srt->no_surat = $srt->id . '/J/FTI/2021';
         return view ('templatedaftarhadir', [
             'nama_kegiatan' => $srt->nama_kegiatan,
             'tanggal_pelaksanaan' => $srt->tanggal_pelaksanaan,
             'waktu' => $srt->waktu,
             'tempat' => $srt->tempat,
             'pembicara' => $srt->pembicara,
-            'ttd' => $srt->ttd
+            'ttd' => $srt->ttd,
+            'nosur' => $srt->no_surat
         ]);
     }
 

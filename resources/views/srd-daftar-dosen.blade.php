@@ -35,9 +35,12 @@
                                     <td>{{ $s->jenis_surat }}</td>
                                     <td>{{ $s->status }}</td>
                                     <td>{{ $s->created_at }}</td>
-                                    <td>@if($s->status == 'disetujui')
+                                    <td>@if($s->status == 'sedang diproses')
+                                        <a href="/surat/dosen/viewtgs/{{$s->id}}" class="btn btn-secondary"><img src="/img/view.png" alt="Print" width="20" height="20"></a>
+                                        @elseif($s->status == 'disetujui')
                                         <a href="/surat/dosen/templatetgs/{{$s->id}}" class="btn btn-info"><img src="/img/logoprint.png" alt="Print" width="20" height="20"></a>
                                     @elseif ($s->status == 'ditolak')
+                                    <a href="/surat/dosen/hapustgs/{{$s->id}}" class="btn btn-danger"><img src="/img/deleteicon.png" alt="Hapus" width="20" height="20">
                                         <a href="/surat/dosen/edittgs/{{$s->id}}" class="btn btn-warning"><img src="/img/editicon.png" alt="Edit" width="20" height="20"></a>@endif</td>
                                 </tr>
                                 @endforeach
