@@ -35,7 +35,6 @@
                                             <input type="date" class="form-control btn-black" name="tanggal" id="floatingInput" value="{{ $srt->tanggal }}" readonly>
                                             <label for="floatingInput">Tanggal</label>
                                             </div>
-
                                     </div>
                                 </div>
                                 </form>

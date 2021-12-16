@@ -152,7 +152,7 @@ class DosenController extends Controller
 
     public function viewKeterangan($id)
     {
-        $srt = surat::find($id);
+        $srt = SuratKet::find($id);
         return view ('srd-viewket-dosen', ['srt' => $srt]);
     }
 
@@ -234,7 +234,7 @@ class DosenController extends Controller
 
     public function viewBeritaAcara($id)
     {
-        $srt = surat::find($id);
+        $srt = SuratBA::find($id);
         return view ('srd-viewba-dosen', ['srt' => $srt]);
     }
 
@@ -319,7 +319,7 @@ class DosenController extends Controller
 
     public function viewPermohonan($id)
     {
-        $srt = surat::find($id);
+        $srt = SuratSper::find($id);
         return view ('srd-viewsper-dosen', ['srt' => $srt]);
     }
 }
