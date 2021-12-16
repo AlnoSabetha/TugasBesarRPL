@@ -416,6 +416,7 @@ class AdminController extends Controller
             'nama' => $nama,
             'tujuan' => $srt->tujuan,
             'keperluan' => $srt->keperluan,
+            'hal' => $srt->keperluan,
             'ttd' => $srt->ttd
         ]);
     }
@@ -467,7 +468,8 @@ class AdminController extends Controller
             'tempat' => $srt->tempat,
             'pembicara' => $srt->pembicara,
             'ttd' => $srt->ttd,
-            'nosur' => $srt->no_surat
+            'nosur' => $srt->no_surat,
+            'update' => $srt->updated_at
         ]);
     }
 

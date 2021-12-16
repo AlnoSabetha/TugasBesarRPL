@@ -68,10 +68,10 @@
 </p><br>
 
 <center>
-					<font size="2">{{ $update }}</font><br><br>
-					<font size="2">Mengetahui</font><br>
+					<font size="2">{{ $update }}</font><br><br><br>
+					<font size="2">Mengetahui</font><br><br>
 					<div style="width: 50%; text-align: left; float: right;">{{ $nama_mitra }}</div><br><br>
-					<div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br>
+					<div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
 					<div style="width: 50%; text-align: left; float: right;">{{ $nama_p_mitra }}</div>
 	</center>
 

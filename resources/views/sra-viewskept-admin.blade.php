@@ -22,7 +22,7 @@
                                             </div>
 
                                             <div class="form-floating mb-2">
-                                            <input type="textarea" class="form-control btn-black" name="membimbing" id="floatingInput" value="{{$srt->membimbing}}" readonly>
+                                            <input type="textarea" class="form-control btn-black" name="menimbang" id="floatingInput" value="{{$srt->menimbang}}" readonly>
                                             <label for="floatingInput">Membimbing</label>
                                             </div>
 

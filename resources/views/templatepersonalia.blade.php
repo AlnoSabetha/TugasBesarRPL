@@ -59,7 +59,7 @@
 
 
             <font size="2">Nomor: {{ $nosur }}</font><br>
-            <font size="2">Hal: $hal</font><br>
+            <font size="2">Hal:{{ $hal }}</font><br>
             <font size="2">Lamp: 1 lembar</font><br><br><br>
             <font size="2"><b>Kepada Yth :<b></font><br>
             <font size="2"><b>{{ $kepada }}<b></font><br>

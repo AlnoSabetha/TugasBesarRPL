@@ -75,10 +75,10 @@
                     <center>
                     <font size="2">Ditetapkan di: {{ $kota }}</font><br>
 					<font size="2">Pada tanggal: {{ $tanggal }}</font><br><br>
-					<p>{{ $pejabat }}</p><br><br>
+					<p></p><br><br>
 					<p>{!! QrCode::generate('BELAJAR QR'); !!}</p><br><br><br><br><br><br><br>
-					<p>$ttd</p>
-                    <p>$nik</p>
+					<p>{{ $pejabat }}</p>
+                    <p></p>
                 	</center>
 
 
