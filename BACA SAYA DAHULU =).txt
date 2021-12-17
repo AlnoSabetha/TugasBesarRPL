@@ -1,6 +1,9 @@
-selamat siang bu, kak maaf jika ada kendala dalam program kami
+selamat siang bu, kak beberapa langkah yang mesti dilakukan sebelum menjalankan program
 
-beberapa langkah yang mesti dilakukan :
+1. imporkan database ke phpmyadmin (db_sql)
+karena jika menggunakan migrate isi db akan berbeda.
+
+2.beberapa langkah yang mesti dilakukan :
 - mengubah file env.txt -> file env laravel (.env)
 - copykan command ini diterminal :
   ~ composer install 
