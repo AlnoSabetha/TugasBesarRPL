@@ -46,8 +46,8 @@
 		<td>
 		<center>
 					<font size="4"><b>Berita Acara</b></font><br><br>
-					<font size="3"><b>contoh Kuliah Umum  {{ $tujuan }}</b></font><br>
-					<font size="3"><b>contoh How to build Product {{ $nama_acara  }}</b></font><br>
+					<font size="3"><b>{{ $tujuan }}</b></font><br>
+					<font size="3"><b{{ $nama_acara  }}</b></font><br>
 					<font size="2">No: {{ $nosur }}</font><br>
 	</center>
 				</td>
@@ -59,9 +59,12 @@
 		<table width="625">
 			<tr>
 		       <td>
-               <p>Pada hari {{ $tanggal }} bertempat di {{ $tempat }} telah dilangsungkan {{ $tujuan }} dengan tema  {{ $nama_acara  }} dengan mengundang pembicara yaitu {{ $pembicara }}
+               <p>
+				   <center>
+					   Pada hari {{ $tanggal }} bertempat di {{ $tempat }} telah dilangsungkan {{ $tujuan }} dengan tema  {{ $nama_acara  }} dengan mengundang pembicara yaitu {{ $pembicara }}
 				   acara ini diikuti oleh seluruh civitas akademika UKDW dan perwakilan dari beberapa mitra kerjasama Fakultas Teknologi Informasi UKDW.
 				   <br><br> Adapun TOR acara, daftar kehadiran peserta, foto kegiatan seperti terlampir pada berita acara ini.</p>
+	</center>
 
 
 <p>Demikian berita acara ini dibuat dengan sebenarnya, untuk dipergunakan sebagaimana mestinya.
