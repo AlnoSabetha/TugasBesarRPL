@@ -61,10 +61,10 @@
             <font size="2">Nomor: {{ $nosur }}</font><br>
             <font size="2">Hal:{{ $hal }}</font><br>
             <font size="2">Lamp: 1 lembar</font><br><br><br>
-            <font size="2"><b>Kepada Yth :<b></font><br>
-            <font size="2"><b>{{ $kepada }}<b></font><br>
-            <font size="2"><b>Universitas Kristen Duta Wacana<b></font><br>
-            <font size="2"><b>Yogyakarta<b></font><br>
+            <font size="2"><b>Kepada Yth :</b></font><br>
+            <font size="2"><b>{{ $kepada }}</b></font><br>
+            <font size="2"><b>Universitas Kristen Duta Wacana</b></font><br>
+            <font size="2"><b>Yogyakarta</b></font><br>
 
                <p>Salam sejahtera, <br> Menyusuli surat kami {{ $nosur }}, perihal Permohonan atas nama {{ $nama }}. Melalui surat ini kami menyampaikan <b> {{ $tujuan }} </b> {{ $keperluan }}</p>
 
