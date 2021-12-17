@@ -70,11 +70,10 @@
 </p><br>
 
 <center>
-					<div style="width: 50%; text-align: left; float: right;">{{ $update }}</div><br><br><br>
-					<div style="width: 50%; text-align: left; float: right;">Mengetahui</div><br><br>
-					<div style="width: 50%; text-align: left; float: right;">{{ $nama_mitra }}</div><br><br>
+					<div style="width: 50%; text-align: left; float: right;">{{ $update }}</div><br>
+					<div style="width: 50%; text-align: left; float: right;">yang bertandatangan,</div><br><br>
 					<div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
-					<div style="width: 50%; text-align: left; float: right;">{{ $nama_p_mitra }}</div>
+					<div style="width: 50%; text-align: left; float: right;">{{ $ttd }}</div>
 	</center>
 
 </div>
