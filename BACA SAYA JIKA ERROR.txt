@@ -1,0 +1,14 @@
+selamat siang bu, kak maaf jika ada kendala dalam program kami
+
+beberapa langkah yang mesti dilakukan :
+- mengubah file env.txt -> file env laravel (.env)
+- copykan command ini diterminal :
+  ~ composer install 
+  ~ php artisan cache:clear 
+  ~ composer dump-autoload 
+- lalu jalankan perintah :
+  ~ composer update
+  ~ composer i
+
+Terima Kasih =)
+ 
