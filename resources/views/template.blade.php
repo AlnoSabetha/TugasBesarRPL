@@ -57,7 +57,7 @@
 		<table width="625">
 			<tr>
 		       <td>
-               <p>Dengan ini Dekan Fakultas Teknologi Informasi Universitas Kristen Duta Wacana Yogyakarta  <br> memberikan tugas kepada para mahasiswa ini :</p>
+               <p>Dengan ini Dekan Fakultas Teknologi Informasi Universitas Kristen Duta Wacana Yogyakarta  <br> memberikan tugas kepada :</p>
 
 <table>
     <tr>
