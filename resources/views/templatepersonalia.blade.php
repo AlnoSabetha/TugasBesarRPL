@@ -66,15 +66,15 @@
             <font size="2"><b>Universitas Kristen Duta Wacana<b></font><br>
             <font size="2"><b>Yogyakarta<b></font><br>
 
-               <p>Salam sejahtera, <br> Menyusuli surat kami {{ $nosur }}, perihal Permohonan $keterangan atas nama {{ $nama }}. Melalui surat ini kami menyampaikan <b> {{ $tujuan }} </b> {{ $keperluan }}</p>
+               <p>Salam sejahtera, <br> Menyusuli surat kami {{ $nosur }}, perihal Permohonan atas nama {{ $nama }}. Melalui surat ini kami menyampaikan <b> {{ $tujuan }} </b> {{ $keperluan }}</p>
 
 <p>Demikian surat ini kami sampaikan. Atau perhatian dan kerjasama yang diberikan kami <br> mengucapkan terima kasih.
 </p><br>
 
-
+<div style="width: 50%; text-align: left; float: left;">yang bertandatangan : </div><br><br>
 <div style="width: 50%; text-align: left; float: left;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
 <div style="width: 50%; text-align: left; float: left;">{{ $ttd }}</div><br>
-<div style="width: 50%; text-align: left; float: left;">$nim</div><br>
+<div style="width: 50%; text-align: left; float: left;">{{ $nim }}</div><br>
 </div>
 
 <script>

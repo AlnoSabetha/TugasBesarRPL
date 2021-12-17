@@ -408,6 +408,7 @@ class AdminController extends Controller
     public function templatePers($id)
     {
         $nama = Auth::user()->name;
+        $nim = Auth::user()->nim;
         $srt = SuratPers::find($id);
         $srt->no_surat = $srt->id . '/A/FTI/2021';
         return view ('templatepersonalia', [
@@ -415,6 +416,7 @@ class AdminController extends Controller
             'kepada' => $srt->kepada,
             'nosur' => $srt->no_surat,
             'nama' => $nama,
+            'nim' => $nim,
             'tujuan' => $srt->tujuan,
             'keperluan' => $srt->keperluan,
             'hal' => $srt->keperluan,
