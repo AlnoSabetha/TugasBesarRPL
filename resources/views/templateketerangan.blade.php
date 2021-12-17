@@ -66,7 +66,7 @@
         <td style="width: 65%;">{{ $nama }}</td>
     </tr>
 	<tr>
-        <td style="width: 30%;">Nim</td>
+        <td style="width: 30%;">Nomor Induk</td>
         <td style="width: 5%;">:</td>
         <td style="width: 65%;">{{ $nim }}</td>
     </tr>
@@ -83,7 +83,7 @@
 </table>
 
 
-<p>Telah menjadi sebagai Badan Pengurus Harian ({{ $jabatan }}) Himpunan Mahasiswa Sistem Informasi Universitas Kristen Duta Wacana dalam periode jabatan {{ $tahun }}.
+<p>Telah menjadi sebagai Badan Pengurus Harian ({{ $jabatan }}) Sistem Informasi Universitas Kristen Duta Wacana dalam periode jabatan {{ $tahun }}.
 </p>
 <p>Demikian kiranya surat keterangan ini dibuat supaya dapat dipergunakan sebagaimana mestinya
 </p>

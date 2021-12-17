@@ -37,8 +37,8 @@
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                            <input type="text" class="form-control btn-black" name="keperluan" id="floatingInput">
-                                            <label for="floatingInput">Keperluan</label>
+                                            <input type="text" class="form-control btn-black" name="keterangan" id="floatingInput">
+                                            <label for="floatingInput">Keterangan</label>
                                             </div>
 
                                             <div class="form-floating mb-3">

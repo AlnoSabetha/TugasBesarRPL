@@ -69,14 +69,14 @@
                     <center>
 					<font size="2"><b>MEMUTUSKAN  :</b></font><br><br>
                     </center>
-                    <p><b>Menetapkan :</b></p><br>
+                    <p><b>Menetapkan :</b></p>
                     <p>{{ $menetapkan }} </p>
 
                     <center>
                     <font size="2">Ditetapkan di: {{ $kota }}</font><br>
-					<font size="2">Pada tanggal: {{ $tanggal }}</font><br><br>
+					<font size="2">Pada tanggal: {{ $tanggal }}</font><br>
 					<p></p><br><br>
-					<p>{!! QrCode::generate('BELAJAR QR'); !!}</p><br><br><br><br><br><br><br>
+					<p>{!! QrCode::generate('BELAJAR QR'); !!}</p><br><br>
 					<p>{{ $pejabat }}</p>
                     <p></p>
                 	</center>
