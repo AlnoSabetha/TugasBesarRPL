@@ -36,11 +36,6 @@
                                             <label for="floatingInput">Keperluan</label>
                                             </div>
 
-                                            <div class="form-floating mb-3">
-                                            <input type="date" class="form-control btn-black" name="tanggal" id="floatingInput">
-                                            <label for="floatingInput">Tanggal</label>
-                                            </div>
-
                                             <select class="form-select mb-3" name="ttd" id="ttd" aria-label="Default select example">
                                             <option selected>yang Bertandatangan</option>
                                             <option value="Ir. Henry Feriadi, M.Sc., Ph.D.">Ir. Henry Feriadi, M.Sc., Ph.D.</option>

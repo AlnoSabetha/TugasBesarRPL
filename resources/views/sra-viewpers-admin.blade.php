@@ -36,12 +36,6 @@
                                             <label for="floatingInput">Keperluan</label>
                                             </div>
 
-                                            <div class="form-floating mb-3">
-                                            <input type="date" class="form-control btn-black" name="tanggal" id="floatingInput" value="{{$srt->tanggal}}" readonly>
-                                            <label for="floatingInput">Tanggal</label>
-                                            </div>
-
-
                                             @if($srt->nama != 'admin')
                                             <select class="form-select mb-3" name="ttd" id="ttd" aria-label="Default select example">
                                             <option selected>yang Bertandatangan</option>

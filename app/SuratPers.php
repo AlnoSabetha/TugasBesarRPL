@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class SuratPers extends Model
 {
     protected $table = 'surat_personalia';
-    protected $fillable = ['tujuan', 'nama', 'nim', 'nama_mitra', 'kepada', 'keperluan', 'tanggal', 'ttd', 'status'];
+    protected $fillable = ['tujuan', 'nama', 'nim', 'nama_mitra', 'kepada', 'keperluan', 'ttd', 'status'];
 }

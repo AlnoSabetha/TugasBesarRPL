@@ -393,7 +393,6 @@ class AdminController extends Controller
             'nama_mitra' => $request->nama_mitra,
             'kepada' => $request->kepada,
             'keperluan' => $request->keperluan,
-            'tanggal' => $request->tanggal,
             'ttd' => $request->ttd,
             'status' => 'disetujui'
         ]);
@@ -412,7 +411,7 @@ class AdminController extends Controller
         $srt = SuratPers::find($id);
         $srt->no_surat = $srt->id . '/A/FTI/2021';
         return view ('templatepersonalia', [
-            'tanggal' => $srt->tanggal,
+            'tanggal' => $srt->created_at,
             'kepada' => $srt->kepada,
             'nosur' => $srt->no_surat,
             'nama' => $nama,
