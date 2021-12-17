@@ -29,6 +29,7 @@ class AdminController extends Controller
             'nama_mitra' => $request->nama_mitra,
             'alamat_mitra' => $request->alamat_mitra,
             'keterangan' => $request->keterangan,
+            'tgl_pelaksanaan' => $request->tgl_pelaksanaan,
             'nim' => $nim,
             'ttd' => $request->ttd,
             'nama' => $nama,
@@ -50,6 +51,7 @@ class AdminController extends Controller
         'nama' => $nama,
         'ttd' => $srt->ttd,
         'nosur' => $srt->no_surat,
+        'tanggal' => $srt->tgl_pelaksanaan,
         'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }

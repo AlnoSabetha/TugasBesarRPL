@@ -41,6 +41,7 @@ class SuratController extends Controller
             'alamat_mitra' => $request->alamat_mitra,
             'keterangan' => $request->keterangan,
             'nim' => $nim,
+            'tgl_pelaksanaan' => $request->tgl_pelaksanaan,
             'nama' => $nama
         ]);
         return redirect('/surat');
@@ -65,6 +66,7 @@ class SuratController extends Controller
          $srt->nama_mitra = $request->nama_mitra;
          $srt->alamat_mitra = $request->alamat_mitra;
          $srt->keterangan = $request->keterangan;
+         $srt->tgl_pelaksanaan = $request->tgl_pelaksanaan;
          $srt->save();
         return redirect('/surat');
     }
@@ -81,6 +83,7 @@ class SuratController extends Controller
         'nama' => $nama,
         'ttd' => $srt->ttd,
         'update' => $srt->updated_at,
+        'tanggal' => $srt->tgl_pelaksanaan,
         'nosur' => $srt->no_surat]);
     }
 

@@ -71,7 +71,7 @@
         <td style="width: 65%;">{{ $nim }}</td>
     </tr>
 </table>
-<p>Untuk keperluan {{ $tujuan }} {{ $keterangan }} yang dilaksanakan oleh  {{ $name }} yang berada di {{ $alamat }} pada tanggal 
+<p>Untuk keperluan {{ $tujuan }} {{ $keterangan }} yang dilaksanakan oleh  {{ $name }} yang berada di {{ $alamat }} pada tanggal {{ $tanggal }}
 </p>
 <p> Demikian Surat ini dibuat untuk dapat dipergunakan  sebagaimana perlunya.
 	Kepada penerima tugas setelah menyelesaikan tugas dimohon menyampaikan laporan kepada pemberi tugas

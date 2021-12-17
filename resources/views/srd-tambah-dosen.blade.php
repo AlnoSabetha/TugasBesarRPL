@@ -43,7 +43,7 @@
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                            <input type="date" class="form-control btn-black" name="tanggal_pelaksanaan" id="floatingInput">
+                                            <input type="date" class="form-control btn-black" name="tgl_pelaksanaan" id="floatingInput">
                                             <label for="floatingInput">Tanggal Pelaksanaan</label>
                                             </div>
 

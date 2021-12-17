@@ -36,6 +36,11 @@
                                     <label for="floatingInput">Nama Mitra</label>
                                     </div>
 
+                                    <div class="form-floating mb-3">
+                                    <input type="date" class="form-control btn-black" name="tgl_pelaksanaan" id="floatingInput" value="{{ $srt->tgl_pelaksanaan }}" readonly>
+                                    <label for="floatingInput">Tanggal Pelaksanaan</label>
+                                    </div>
+
                                     <div class="form-floating mb-2">
                                     <input type="text" class="form-control btn-black" readonly name="alamat_mitra" id="floatingInput" value="{{ $srt->alamat_mitra }}">
                                     <label for="floatingInput">Alamat Mitra</label>

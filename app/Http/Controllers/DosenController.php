@@ -33,6 +33,7 @@ class DosenController extends Controller
             'nama_mitra' => $request->nama_mitra,
             'alamat_mitra' => $request->alamat_mitra,
             'keterangan' => $request->keterangan,
+            'tgl_pelaksanaan' => $request->tgl_pelaksanaan,
             'nim' => $nim,
             'nama' => $nama
         ]);
@@ -58,6 +59,7 @@ class DosenController extends Controller
          $srt->nama_mitra = $request->nama_mitra;
          $srt->alamat_mitra = $request->alamat_mitra;
          $srt->keterangan = $request->keterangan;
+         $srt->tgl_pelaksanaan = $request->tgl_pelaksanaan;
          $srt->save();
         return redirect('/surattgs/dosen');
     }
@@ -73,6 +75,7 @@ class DosenController extends Controller
         'nim' => $srt->nim,
         'nama' => $nama,
         'ttd' => $srt->ttd,
+        'tanggal' => $srt->tgl_pelaksanaan,
         'update' => $srt->updated_at,
         'nosur' => $srt->no_surat]);
     }
