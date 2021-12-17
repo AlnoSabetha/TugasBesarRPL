@@ -46,7 +46,7 @@
 		<td>
 		<center>
 					<font size="4"><b>Berita Acara</b></font><br><br>
-					<font size="3"><b>{{ $tujuan }}</b></font><br>
+					<font size="3"><b>"{{ $tujuan }}"</b></font><br>
 					<font size="3"><b{{ $nama_acara  }}</b></font><br>
 					<font size="2">No: {{ $nosur }}</font><br>
 	</center>
@@ -60,19 +60,18 @@
 			<tr>
 		       <td>
                <p>
-				   <center>
 					   Pada hari {{ $tanggal }} bertempat di {{ $tempat }} telah dilangsungkan {{ $tujuan }} dengan tema  {{ $nama_acara  }} dengan mengundang pembicara yaitu {{ $pembicara }}
 				   acara ini diikuti oleh seluruh civitas akademika UKDW dan perwakilan dari beberapa mitra kerjasama Fakultas Teknologi Informasi UKDW.
 				   <br><br> Adapun TOR acara, daftar kehadiran peserta, foto kegiatan seperti terlampir pada berita acara ini.</p>
-	</center>
+
 
 
 <p>Demikian berita acara ini dibuat dengan sebenarnya, untuk dipergunakan sebagaimana mestinya.
 </p><br>
 
 <center>
-					<font size="2">{{ $update }}</font><br><br><br>
-					<font size="2">Mengetahui</font><br><br>
+					<div style="width: 50%; text-align: left; float: right;">{{ $update }}</div><br><br><br>
+					<div style="width: 50%; text-align: left; float: right;">Mengetahui</div><br><br>
 					<div style="width: 50%; text-align: left; float: right;">{{ $nama_mitra }}</div><br><br>
 					<div style="width: 50%; text-align: left; float: right;">{!! QrCode::generate('BELAJAR QR'); !!}</div><br><br><br><br><br><br><br><br>
 					<div style="width: 50%; text-align: left; float: right;">{{ $nama_p_mitra }}</div>
