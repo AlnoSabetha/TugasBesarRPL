@@ -57,7 +57,7 @@
 		<table width="625">
 			<tr>
 		       <td>
-               <p>{{ $jabatan }} Himpunan Mahasiswa Sistem Infromasi Universitas Kristen Duta Wacana  <br> {{ $tahun }} dengan ini menyatakan bahwa</p>
+               <p>{{ $jabatan }} Sistem Infromasi Universitas Kristen Duta Wacana  <br> {{ $tahun }} dengan ini menyatakan bahwa</p>
 
 <table>
     <tr>
